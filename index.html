@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Магазин Девайс</h1>
-      <img class="logo" src="#" alt="логотип Девайс">
+      <a><img class="logo" src="images/logo-head.svg" width="145" height="36" alt="логотип Девайс"></a>
       <nav class="navigation">
         <ul class="navigation-user">
           <li class="navigation-item">
@@ -17,15 +17,15 @@
             </form>
           </li>
           <li class="navigation-item">
-            <img class="enter" src="#" alt="лого входа">
+            <img class="enter" src="images/login-enter.svg" width="13" height="12" alt="лого входа">
             <a class="navigation-link" href="#">Войти</a>
           </li>
           <li class="navigation-item">
-            <img class="compare" src="#" alt="лого сравнить">
+            <img class="compare" src="images/logo-compare.svg" width="10" height="12" alt="лого сравнить">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <img class="cart" src="#" alt="лого корзина">
+            <img class="cart" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
@@ -54,18 +54,16 @@
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующий товар</span>
         </button>
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <form action="#" method="post">
-               <section class="products">
-                <h2 class="visually-hidden"><img src="#" alt="quadrocopter-big"></h2>
+        <div class="slider-products">
+          <div class="slider-products-one">
+                <h2 class="visually-hidden"><img src="images/slider-quadrocopter.png" width="560" height="560" alt="quadrocopter-big"></h2>
                  <ul class="products-list">
-                   <li class="products-items">
-                     <h3 class="products-title">01</h3>
-                     <h4 class="products-description">Порхает как бабочка,<br> жалит как пчела!</h4>
-                     <p class="products-description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.
+                  <li class="products-items">
+                    <h3 class="products-title">01</h3>
+                    <h4 class="products-description">Порхает как бабочка,<br> жалит как пчела!</h4>
+                    <p class="products-description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.
                     </p>
-                   </li>
+                  </li>
                  </ul>
                  <a class="slider-gallery-quadrocopter" href="">Подробнее</a> 
                  <ul class="products-list">
@@ -77,14 +75,10 @@
                     <h6 class="products-title">50 м</h6>
                     <p class="products-description">Радиус поражения</p>
                   </li>
-                </ul>
-                </section>
-              </form>
-          </li>
-          <li class="slider-pagination-item">
-            <form action="#" method="post">
-               <section class="products">
-                <h2 class="visually-hidden"><img src="#" alt="fitnes bracelet"></h2>
+                 </ul>
+          </div>
+          <div class="slider-products-two">
+                <h2 class="visually-hidden"><img src="images/slider-fitnes-bracelet.png" width="560" height="560" alt="fitnes bracelet"></h2>
                  <ul class="products-list">
                    <li class="products-items">
                      <h3 class="products-title">02</h3>
@@ -99,13 +93,9 @@
                     <p class="products-description">Без подзарядки</p>
                   </li>
                 </ul>
-               </section>
-              </form>
-          </li>
-          <li class="slider-pagination-item">
-            <form action="#" method="post">
-              <section class="products">
-                <h2 class="visually-hidden"><img src="#" alt="monopod"></h2>
+          </div>
+          <div class="slider-products-three">
+                <h2 class="visually-hidden"><img src="images/slider-monopod.png" width="560" height="560" alt="monopod"></h2>
                  <ul class="products-list">
                    <li class="products-items">
                      <h3 class="products-title">03</h3>
@@ -129,41 +119,44 @@
                     <p class="products-description">Материал</p>
                   </li>
                 </ul>
-               </section>
-              </form>
-          </li>
-        </ol>
-        </section>
-       <section class="categories">
+          </div>
+        </div> 
+         <fieldset class="slider-products-button">
+          <input class="slider-products-button" type="radio" name="slider-radio-123" checked>
+          <input class="slider-products-button" type="radio" name="slider-radio-123">
+          <input class="slider-products-button" type="radio" name="slider-radio-123">
+         </fieldset>
+      </section>
+      <section class="categories">
          <h2 class="visually-hidden">категории товаров</h2>
          <ul class="categories-list">
            <li class="categories-items">
-             <a class="categories-virtual" href=""><img src="#" alt="виртуальная реальность">
+             <a class="categories-virtual" href=""><img src="images/logo-categories/Vector.svg" width="96.95" height="54.99" alt="виртуальная реальность">
              <p class="categories-description">Виртуальная реальность</p>
              </a>
            </li>
            <li class="categories-items">
-            <a class="categories-monopod" href=""><img src="#" alt="моноподы для селфи">
+            <a class="categories-monopod" href=""><img src="images/logo-categories/Vector-1.svg" width="85.87" height="117" alt="моноподы для селфи">
             <p class="categories-description">Моноподы для селфи</p>
             </a>
           </li>
           <li class="categories-items">
-            <a class="categories-action" href=""><img src="#" alt="экшн-камеры">
+            <a class="categories-action" href=""><img src="images/logo-categories/Vector-2.svg" width="71.02" height="87" alt="экшн-камеры">
             <p class="categories-description">Экшн-камеры</p>
             </a>
           </li>
           <li class="categories-items">
-           <a class="categories-fitnes" href=""><img src="#" alt="фитнес-браслеты">
+           <a class="categories-fitnes" href=""><img src="images/logo-categories/Vector-3.svg" width="107.31" height="65" alt="фитнес-браслеты">
            <p class="categories-description">Фитнес-браслеты</p>
            </a>
          </li>
          <li class="categories-items">
-          <a class="categories-watch" href=""><img src="#" alt="умные часы">
+          <a class="categories-watch" href=""><img src="images/logo-categories/Vector-4.svg" width="56" height="98" alt="умные часы">
           <p class="categories-description">Умные часы</p>
           </a>
          </li>
          <li class="categories-items">
-          <a class="categories-quadrocopter-" href=""><img src="#" alt="квадрокоптеры">
+          <a class="categories-quadrocopter-" href=""><img src="images/logo-categories/Vector-5.svg" width="132" height="69" alt="квадрокоптеры">
           <p class="categories-description">Квадрокоптеры</p>
           </a>
          </li>
@@ -178,25 +171,25 @@
                 <li class="services-slider-item slider-delivery">
                   <h3 class="services-title">Доставка</h3>
                   <p class="services-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                  <img class="services" src="#" alt="логотип доставщик">
+                  <img class="services" src="images/services-postman.svg" width="136" height="164" alt="логотип доставщик">
                 </li>
                 <li class="services-slider-item slider-guarantee">
                   <h4 class="services-title">Гарантия</h4>
                   <p class="services-description">Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
-                  <img class="services" src="#" alt="логотип гарантия">
+                  <img class="services" src="images/services-guarantee.svg" width="171" height="195" alt="логотип гарантия">
                 </li>
                 <li class="services-slider-item slider-credit">
                   <h5 class="services-title">Кредит</h5>
                   <p class="services-description">Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
-                  <img class="services" src="#" alt="логотип кабала">
+                  <img class="services" src="images/services-credit.svg" width="156" height="188" alt="логотип кабала">
                 </li>
               </ul>
               <ul class="services-form">
               <li class="services-form">
                 <a class="services-form-view" href="delivery.html">
-                  <img class="services" src="#" alt="логотип машина доставки">
+                  <img class="services" src="images/services-postcar.svg" width="47" height="31.1" alt="логотип машина доставки">
                   <h6 class="services">Доставим редкий товар под заказ</h6>
-                <img class="services" src="#" alt="восклицательный знак">
+                <img class="services" src="images/services-i.svg" width="40" height="40" alt="восклицательный знак">
                 </a>
               </li>
             </ul>
@@ -228,22 +221,19 @@
           <p class="subscription-description-text">Еженедельный дайджест с обзорами новинок, <br>
             длительными тест-драйвами, распаковками, а также акции, <br> спецпредложения и вот это вот всё.
           </p>
-            <p class="subscription-email">
-              <form action="https://echo.htmlacademy.ru/" method="POST">
+          <form action="https://echo.htmlacademy.ru/" method="POST">
                <input type="email" placeholder="Ваш e-mail" name="subscription-date">
                <button class="form-email-button" type="submit">Подписаться</button>
-              </form>
-            </p>
-            <p class="subscription-description-text">
-               <img class="subscription-icon" src="#" alt="лого галочка">
-               Это бесплатно
-            </p>
+          </form>
+          <p class="subscription-description-text">
+           <img class="subscription-icon" src="images/subscription-check-mark.svg" width="14" height="14" alt="лого галочка">Это бесплатно
+          </p>
         </section>
     </main>
     <footer class="page-footer">
      <section class="page-footer-title">
       <h2 class="visually-hidden">Магазин Девайс</h2>
-      <img class="page-footer-title-logo" src="#" alt="логотип Девайс">
+      <a><img class="logo" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
       <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
       </section>
       <section class="footer-delivery-warranty-contacts">
@@ -261,20 +251,20 @@
         </ul>
         <ul class="footer-delivery-warranty-contacts-socnetwork-list">
           <li class="footer-delivery-warranty-contacts-socnetwork-items">
-             <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img src="#" alt="telegramm"></a>
+             <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img src="images/logo-telegramm.svg" width="13.34" height="11.19" alt="telegramm"></a>
           </li>
          <li class="footer-delivery-warranty-contacts-socnetwork-items">
-          <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="youtube"></a>
+          <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo-youtube.svg" width="16" height="10.67" alt="youtube"></a>
          </li>
          <li class="footer-delivery-warranty-contacts-socnetwork-items">
-          <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru"><img src="#" alt="twitter"></a>
+          <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru"><img src="images/logo-twitter.svg" width="15" height="14.06" alt="twitter"></a>
          </li>
         </ul>
       </section>
       <section class="footer-phone-logohtmlacademy">
         <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <h2 class="visually-hidden">logo htmlacademy</h2>
-        <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://htmlacademy.ru"><img class="footer-phone-logohtmlacademy-link" src="#" alt="логотип htmlacademyfooter"></a>
+        <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://htmlacademy.ru"><img class="footer-phone-logohtmlacademy-link" src="images/logo-htmlacademy.svg" width="115" height="33" alt="логотип htmlacademyfooter"></a>
       </section>
     </footer>
      </body>
