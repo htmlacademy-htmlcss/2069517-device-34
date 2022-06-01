@@ -151,3 +151,18 @@ body {
     font-weight: 400;
     color: #444444;
 }
+header{
+    display: inline-block;
+    width: 1160px;
+    height: 186px;
+    left: 140px;
+    top: 40px;
+    background-color: #FFE17F;
+}
+footer{
+    display: inline-block;
+    width: 1140px;
+    height: 321px;
+    background-color: #444444;
+}
+
