@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,184 +11,184 @@
       <a href="index.html"><img class="logo" src="images/logo-head.svg" width="145" height="36" alt="логотип Девайс"></a>
        <nav class="navigation">
         <ul class="navigation-user">
-          <li class="navigation-item">
-            <form action="https://echo.htmlacademy.ru/" method="POST">
-            <input type="search" placeholder="Текст поиска" name="search-date">
-            <button class="form-search-button" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item">
-            <img class="enter" src="images/login-enter.svg" width="13" height="12" alt="лого входа">
-            <a class="navigation-login-name" href="#">Коля Петухов</a>
-            <a class="navigation-link" href="#">Выйти</a>
-          </li>
-          <li class="navigation-item">
-            <img class="compare" src="images/logo-compare.svg" width="10" height="12" alt="лого сравнить">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <img class="cart" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
+        <li class="navigation-item">
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+        <input type="search" placeholder="Текст поиска" name="search-date">
+        <button class="navigation-link-head" type="submit">Найти</button>
+        </form>
+        </li>
+        <li class="navigation-item">
+        <img class="enter" src="images/login-enter.svg" width="13" height="12" alt="лого входа">
+        <a class="navigation-link-head" href="#">Коля Петухов</a>
+        <a class="navigation-link-head-login" href="#">Выйти</a>
+        </li>
+        <li class="navigation-item">
+        <img class="compare" src="images/logo-compare.svg" width="10" height="12" alt="лого сравнить">
+        <a class="navigation-link-head" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+        <img class="cart" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
+        <a class="navigation-link-head" href="#">Корзина</a>
+        </li>
         </ul>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="warranty.html">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="contacts.html">Контакты</a>
-          </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="warranty.html">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="contacts.html">Контакты</a>
+        </li>
         </ul>
-       </nav>
+      </nav>
     </header>
     <main>
       <section class="catalog-monopod">
-        <h2 class="catalog-monopod-item">Моноподы для селфи</h2>
+        <h2 class="catalog-item">Моноподы для селфи</h2>
         <ul class="catalog-monopod-list">
-          <li class="catalog-monopod-item">
-            <a class="catalog-monopod-link" href="index.html">Главная</a>
-          </li> 
-          <li class="catalog-monopod-item">
-            <a class="catalog-monopod-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="catalog-monopod-item">
-            <a class="catalog-monopod-link">Моноподы для селфи</a>
-          </li>
+        <li class="catalog-monopod-item">
+        <a class="catalog-monopod-link" href="index.html">Главная</a>
+        </li> 
+        <li class="catalog-monopod-item">
+        <a class="catalog-monopod-link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="catalog-monopod-item">
+        <a class="catalog-monopod-link">Моноподы для селфи</a>
+        </li>
         </ul>
       </section>
       <section class="filter">
         <h2 class="filter-title">фильтр:</h2>
         <form class="filter-fill" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="filter-fill-field">
-            <legend class="filter-fill-field-cost">Стоимость</legend>
-              <div class="filter-slider-flat">
-                <input id="a" type="range" min="0" max="8000" value="0" name="line">
-               <input id="b" type="range" min="0" max="8000" value="5000" name="line">
-              </div>
-              <div class="filter-slider-progress"></div>
-          </div>
-          <fieldset class="filter-fill-choice">
-            <legend class="filter-fill-field-choice-color">Цвет</legend>
-             <label class="filter-color-black">
-               <input type="checkbox" name="area" checked value="черный">
-               <span class="filter-color-black">Черный</span> 
-             </label>
-             <label class="filter-color-white">
-               <input type="checkbox" name="area" checked value="Белый">
-               <span class="filter-color-white">Белый</span> 
-             </label>
-             <label class="filter-color-blue">
-               <input type="checkbox" name="area" value="Синий">
-               <span class="filter-color-blue">Синий</span>
-             </label>
-             <label class="filter-color-red">
-               <input type="checkbox" name="area" value="Красный">
-               <span class="filter-color-red">Красный</span>
-             </label>
-             <label class="filter-color-pink">
-               <input type="checkbox" name="area" value="Розовый">
-               <span class="filter-color-pink">Розовый</span>
-             </label>
-          </fieldset>
-          <fieldset class="filter-fill-bluetooth">
-            <legend class="filter-fill-field">Bluetooth</legend>
-               <select class="filter-fill-bluetooth" name="question-one">
-               <option class="filter-fill-bluetooth" value="available" checked>Есть</option> 
-               <option class="filter-fill-bluetooth" value="not">Нет</option>
-               </select>
-          </fieldset>
-          <button class="filter-fill-button" type="submit">Показать</button>
+        <div class="filter-fill-field">
+        <legend class="filter-fill-field cost">Стоимость</legend>
+        <div class="filter-slider-flat">
+        <input  type="range" min="0" max="8000" value="0" step="1000">
+        <input  type="range" min="0" max="8000" value="5000" step="1000">
+        </div>
+        <div class="filter-slider-progress"></div>
+        </div>
+        <fieldset class="filter-fill-choice">
+        <legend class="filter-fill-field choice-color">Цвет</legend>
+        <label class="filter-color-black">
+        <input type="checkbox" name="area" checked value="черный">
+        <span class="filter-color black">Черный</span> 
+        </label>
+        <label class="filter-color-white">
+        <input type="checkbox" name="area" checked value="Белый">
+        <span class="filter-color white">Белый</span> 
+        </label>
+        <label class="filter-color-blue">
+        <input type="checkbox" name="area" value="Синий">
+        <span class="filter-color blue">Синий</span>
+        </label>
+        <label class="filter-color-red">
+        <input type="checkbox" name="area" value="Красный">
+        <span class="filter-color red">Красный</span>
+        </label>
+        <label class="filter-color-pink">
+        <input type="checkbox" name="area" value="Розовый">
+        <span class="filter-color pink">Розовый</span>
+        </label>
+        </fieldset>
+        <fieldset class="filter-fill-bluetooth">
+        <legend class="filter-fill-field">Bluetooth</legend>
+        <select class="filter-fill-bluetooth" name="question-one">
+        <option class="filter-fill-bluetooth" value="available" checked>Есть</option> 
+        <option class="filter-fill-bluetooth" value="not">Нет</option>
+        </select>
+        </fieldset>
+        <button class="filter-fill-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="sorting">
         <h2 class="sorting-title">сортировка:</h2>
-         <fieldset class="sorting-choice">
-           <select class="sorting-radio-button" name="sorting-choice">
-            <option class="sorting-choice-radio-label" value="popular" checked>Популярные</option>
-            <option class="sorting-choice-radio-label" value="for-price">По цене</option>
-         </fieldset>
-         <fieldset class="sorting-choice-button">
-           <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-            <label class="sorting-choice sorting-max-label"></label>
-             <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-              <label class="sorting-choice sorting-min-label"></label>
-         </fieldset>
+        <fieldset class="sorting-choice">
+        <select class="sorting-radio-button" name="sorting-choice">
+        <option class="sorting-choice-radio-label" value="popular" checked>Популярные</option>
+        <option class="sorting-choice-radio-label" value="for-price">По цене</option>
+        </fieldset>
+        <fieldset class="sorting-choice-button">
+        <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
+        <label class="sorting-choice sorting-max-label"></label>
+        <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
+        <label class="sorting-choice sorting-min-label"></label>
+        </fieldset>
         <div class="sorting-slider-tile-user">
-         <a class="sorting-slider-tile-user" href="#">
-              <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
-              <h3 class="sorting-slider-tile-user-name">Любительская <br> селфи-палка</h3>
-              <p class="sorting-slider-tile-user-cost">500 ₽</p>
-         </a>
+        <a class="sorting-slider-tile-user" href="#">
+        <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
+        <h3 class="sorting-slider-tile-name">Любительская <br> селфи-палка</h3>
+        <p class="sorting-slider-tile-cost">500 ₽</p>
+        </a>
         </div>
         </li>
         <div class="sorting-slider-tile-profi">
-          <a class="sorting-slider-tile-profi" href="#">
-               <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
-               <h4 class="sorting-slider-tile-profi-name">Профессиональная <br> селфи-палка</h4>
-               <p class="sorting-slider-tile-profi-cost">1500 ₽</p>
-          </a>
+        <a class="sorting-slider-tile-profi" href="#">
+        <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
+        <h4 class="sorting-slider-tile-name">Профессиональная <br> селфи-палка</h4>
+        <p class="sorting-slider-tile-cost">1500 ₽</p>
+        </a>
         </div>
         <div class="sorting-slider-tile-water">
-          <a class="sorting-slider-tile-water" href="#">
-               <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
-               <h5 class="sorting-slider-tile-water-name">Непотопляемая <br> селфи-палка</h5>
-               <p class="sorting-slider-tile-water-cost">2500 ₽</p>
-          </a>
+        <a class="sorting-slider-tile-water" href="#">
+        <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
+        <h5 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h5>
+        <p class="sorting-slider-tile-cost">2500 ₽</p>
+        </a>
         </div>
-         <div class="sorting-slider-tile-follow">
-          <a class="sorting-slider-tile-follow" href="#">
-               <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
-               <h6 class="sorting-slider-tile-follow-name">Селфи-палка «Следуй <br> за мной»</h6>
-               <p class="sorting-slider-tile-follow-cost">1500 ₽</p>
-          </a>
+        <div class="sorting-slider-tile-follow">
+        <a class="sorting-slider-tile-follow" href="#">
+        <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
+        <h6 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h6>
+        <p class="sorting-slider-tile-cost">1500 ₽</p>
+        </a>
         </div>
         <a class="sorting-slider-button" href="#">Загрузить ещё</a>
         <div class="sorting-slider">
-         <a class="sorting-slider-list-back" href="#">назад</a>
-            <ul class="sorting-slider-list">
-              <li class="sorting-slider-list-elements"><a href="#">1</a></li>
-               <li class="sorting-slider-list-elements"><a href="#">2</a></li>
-                <li class="sorting-slider-list-elements"><a href="#">3</a></li>
-            </ul>
-        <a class="sorting-slider-list-forward" href="#">вперед</a>
+        <a class="sorting-slider-list-shift" href="#">назад</a>
+        <ul class="sorting-slider-list">
+        <li class="sorting-slider"><a class="sorting-slider-list-elements" href="#">1</a></li>
+        <li class="sorting-slider"><a class="sorting-slider-list-elements" href="#">2</a></li>
+        <li class="sorting-slider"><a class="sorting-slider-list-elements" href="#">3</a></li>
+        </ul>
+        <a class="sorting-slider-list-shift" href="#">вперед</a>
         </div> 
       </section>
     </main>
     <footer class="page-footer">
-     <section class="page-footer-title">
-      <h2 class="visually-hidden">Магазин Девайс</h2>
-      <a href="index.html"><img class="logo" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
-      <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
+      <section class="page-footer-title">
+        <h2 class="visually-hidden">Магазин Девайс</h2>
+        <a href="index.html"><img class="logo" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
+        <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
       </section>
       <section class="footer-delivery-warranty-contacts">
         <h2 class="visually-hidden">доставка гарантия контакты</h2>
         <ul class="footer-delivery-warranty-contacts-list">
-          <li class="footer-delivery-warranty-contacts-item">
-            <a class="footer-delivery-warranty-contacts-link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="footer-delivery-warranty-contacts-item">
-            <a class="footer-delivery-warranty-contacts-link" href="warranty.html">Гарантия</a>
-          </li>
-          <li class="footer-delivery-warranty-contacts-item">
-            <a class="footer-delivery-warranty-contacts-link" href="contacts.html">Контакты</a>
-          </li>
+        <li class="footer-delivery-warranty-contacts-item">
+        <a class="footer-delivery-warranty-contacts-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="footer-delivery-warranty-contacts-item">
+        <a class="footer-delivery-warranty-contacts-link" href="warranty.html">Гарантия</a>
+        </li>
+        <li class="footer-delivery-warranty-contacts-item">
+        <a class="footer-delivery-warranty-contacts-link" href="contacts.html">Контакты</a>
+        </li>
         </ul>
         <ul class="footer-delivery-warranty-contacts-socnetwork-list">
-          <li class="footer-delivery-warranty-contacts-socnetwork-items">
-             <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img src="images/logo-telegramm.svg" width="13.34" height="11.19" alt="telegramm"></a>
-          </li>
-         <li class="footer-delivery-warranty-contacts-socnetwork-items">
-          <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo-youtube.svg" width="16" height="10.67" alt="youtube"></a>
-         </li>
-         <li class="footer-delivery-warranty-contacts-socnetwork-items">
-          <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru"><img src="images/logo-twitter.svg" width="15" height="14.06" alt="twitter"></a>
-         </li>
+        <li class="footer-delivery-warranty-contacts-socnetwork-items">
+        <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img src="images/logo-telegramm.svg" width="13.34" height="11.19" alt="telegramm"></a>
+        </li>
+        <li class="footer-delivery-warranty-contacts-socnetwork-items">
+        <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo-youtube.svg" width="16" height="10.67" alt="youtube"></a>
+        </li>
+        <li class="footer-delivery-warranty-contacts-socnetwork-items">
+        <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru"><img src="images/logo-twitter.svg" width="15" height="14.06" alt="twitter"></a>
+        </li>
         </ul>
       </section>
       <section class="footer-phone-logohtmlacademy">
@@ -196,5 +197,5 @@
         <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://htmlacademy.ru"><img class="footer-phone-logohtmlacademy-link" src="images/logo-htmlacademy.svg" width="115" height="33" alt="логотип htmlacademyfooter"></a>
       </section>
     </footer>
-     </body>
+  </body>
 </html>
