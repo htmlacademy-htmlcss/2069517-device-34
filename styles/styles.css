@@ -257,6 +257,25 @@ html {
   outline-offset: -5px;
 }
 
+.navigation-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.icon-head {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-right: 12px;
+}
+
+.navigation-link-head-login {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+}
+
 .navigation-user {
   margin: 0;
   padding: 0;
@@ -395,7 +414,7 @@ html {
   margin: 0;
   padding: 0;
   padding-top: 60px;
-  padding-right: 50px;
+  padding-right: 30px;
   text-align: end;
 
   outline: 5px solid rgba(7, 127, 148, 0.5);
@@ -566,7 +585,7 @@ html {
   list-style-type: none;
 }
 
-.services-order-item-container{
+.services-order-item-container {
   display: flex;
   background-color: #F0F0F0;
   width: 1160px;
@@ -695,6 +714,7 @@ html {
   outline: 5px solid rgba(31, 8, 6, 0.5);
   outline-offset: -5px;
 }
+
 .subscription-list {
   margin: 0;
   padding: 0;
@@ -729,6 +749,10 @@ html {
 }
 
 .subscription-title-more-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
   outline: 5px solid rgba(31, 8, 6, 0.5);
   outline-offset: -5px;
 }
