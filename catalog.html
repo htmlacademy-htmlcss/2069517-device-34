@@ -11,7 +11,7 @@
   <div class="conteiner-body">
     <header class="page-header">
       <!--  <h1 class="visually-hidden">Магазин Девайс</h1> -->
-      <nav class="navigation">
+      <nav class="navigation navigation-catalog">
         <a href="index.html"><img class="logo" src="images/logo-head.svg" width="145" height="36"
             alt="логотип Девайс"></a>
         <div class="navigation-container">
@@ -42,9 +42,10 @@
         <div class="navigation-list-catalog-container">
           <ul class="navigation-list-catalog">
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог товаров
-                <!--<img class="catalog-plus" src="images/catalog-logo-plus.svg" width="50" height="50" alt="плюсик">-->
-              </a>
+              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li>
+              <img class="catalog-plus" src="images/catalog-logo-plus.svg" width="50" height="50" alt="плюсик">
             </li>
           </ul>
           <ul class="navigation-warranty-contacts-link">
@@ -77,114 +78,130 @@
             </ul>
           </div>
         </section>
-        <section class="sorting">
-          <h2 class="filter-title">фильтр:</h2>
-          <h2 class="sorting-title">сортировка:</h2>
-          <div class="sorting-choice">
-            <select class="sorting-radio-button" name="sorting-choice">
-              <option class="sorting-choice-radio-label" value="popular">Популярные</option>
-              <option class="sorting-choice-radio-label" value="for-price">По цене</option>
-            </select>
-          </div>
-          <div class="sorting-choice-button">
-            <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-            <label class="sorting-choice sorting-max-label"></label>
-            <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-            <label class="sorting-choice sorting-min-label"></label>
-          </div>
-        </section>
-        <div class="sorting-select-catalog">
-          <div class="filter-more">
-            <section class="filter">
-              <form class="filter-fill" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="filter-fill-field">
-                  <h2 class="filter-fill-field cost">Стоимость</h2>
-                  <div class="filter-slider-flat">
-                    <input type="range" min="0" max="8000" value="0" step="1000">
-                    <input type="range" min="0" max="8000" value="5000" step="1000">
+        <div class="back-catalog">
+          <section class="sorting">
+            <h2 class="filter-title">фильтр:</h2>
+            <h2 class="filter-title">сортировка:</h2>
+            <div class="sorting-choice">
+              <select class="sorting-radio-button" name="sorting-choice">
+                <option class="sorting-choice-radio-label" value="popular">Популярные</option>
+                <option class="sorting-choice-radio-label" value="for-price">По цене</option>
+              </select>
+            </div>
+            <div class="sorting-choice button">
+              <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
+              <label class="sorting-choice sorting-max-label"></label>
+              <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
+              <label class="sorting-choice sorting-min-label"></label>
+            </div>
+          </section>
+          <div class="sorting-select-catalog">
+            <div class="filter-more">
+              <section class="filter">
+                <form class="filter-fill" action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="filter-fill-field">
+                    <h2 class="filter-fill-field cost">Стоимость</h2>
+                    <div class="filter-slider-flat">
+                      <input type="range" min="0" max="8000" value="0" step="1000">
+                      <input type="range" min="0" max="8000" value="5000" step="1000">
+                    </div>
+                    <div class="filter-slider-progress"></div>
                   </div>
-                  <div class="filter-slider-progress"></div>
-                </div>
-                <div class="filter-fill-choice">
-                  <h3 class="filter-fill-field choice-color">Цвет</h3>
-                  <ul>
-                    <li>
-                      <input type="checkbox" name="area" checked value="черный">
-                      <span class="filter-color black">Черный</span>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="area" checked value="Белый">
-                      <span class="filter-color white">Белый</span>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="area" value="Синий">
-                      <span class="filter-color blue">Синий</span>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="area" value="Красный">
-                      <span class="filter-color red">Красный</span>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="area" value="Розовый">
-                      <span class="filter-color pink">Розовый</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filter-fill-bluetooth">
-                  <h4 class="filter-fill-field">Bluetooth</h4>
-                  <select class="filter-fill-bluetooth" name="question-one">
-                    <option class="filter-fill-bluetooth" value="available">Есть</option>
-                    <option class="filter-fill-bluetooth" value="not">Нет</option>
-                  </select>
-                </div>
-                <button class="filter-fill-button" type="button">Показать</button>
-              </form>
-            </section>
-          </div>
-          <div class="cotalog-slider-more">
-            <section class="cotalog-slider-monopod">
-              <div class="sorting-slider-tile-user">
-                <a class="sorting-slider-tile-user" href="#">
-                  <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
-                  <h3 class="sorting-slider-tile-name">Любительская <br> селфи-палка</h3>
-                  <p class="sorting-slider-tile-cost">500 ₽</p>
-                </a>
-              </div>
-              <div class="sorting-slider-tile-profi">
-                <a class="sorting-slider-tile-profi" href="#">
-                  <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
-                  <h4 class="sorting-slider-tile-name">Профеcсиональная <br> селфи-палка</h4>
-                  <p class="sorting-slider-tile-cost">1500 ₽</p>
-                </a>
-              </div>
-              <div class="sorting-slider-tile-water">
-                <a class="sorting-slider-tile-water" href="#">
-                  <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
-                  <h5 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h5>
-                  <p class="sorting-slider-tile-cost">2500 ₽</p>
-                </a>
-              </div>
-              <div class="sorting-slider-tile-follow">
-                <a class="sorting-slider-tile-follow" href="#">
-                  <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
-                  <h6 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h6>
-                  <p class="sorting-slider-tile-cost">1500 ₽</p>
-                </a>
-              </div>
-              <a class="sorting-slider-button" href="#">Загрузить ещё</a>
-              <div class="sorting-slider">
-                <a class="sorting-slider-list-shift" href="#">назад</a>
-                <ul class="sorting-slider-list">
-                  <li class="sorting-slider"><a class="sorting-slider-list-elements" href="#">1</a></li>
-                  <li class="sorting-slider"><a class="sorting-slider-list-elements" href="#">2</a></li>
-                  <li class="sorting-slider"><a class="sorting-slider-list-elements" href="#">3</a></li>
+                  <div class="filter-fill-choice">
+                    <h3 class="filter-fill-field choice-color">Цвет</h3>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="area" checked value="черный">
+                        <span class="filter-color black">Черный</span>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="area" checked value="Белый">
+                        <span class="filter-color white">Белый</span>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="area" value="Синий">
+                        <span class="filter-color blue">Синий</span>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="area" value="Красный">
+                        <span class="filter-color red">Красный</span>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="area" value="Розовый">
+                        <span class="filter-color pink">Розовый</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filter-fill-bluetooth">
+                    <h4 class="filter-fill-field">Bluetooth</h4>
+                    <select class="filter-fill-bluetooth" name="question-one">
+                      <option class="filter-fill-bluetooth" value="available">Есть</option>
+                      <option class="filter-fill-bluetooth" value="not">Нет</option>
+                    </select>
+                  </div>
+                  <button class="filter-fill-button" type="button">Показать</button>
+                </form>
+              </section>
+            </div>
+            <div class="cotalog-slider-more">
+              <section class="cotalog-slider-monopod">
+                <ul class="sorting-slider-tile-card">
+                  <li class="sorting-slider-tile user">
+                    <a class="sorting-slider-tile-user" href="#">
+                      <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
+                      <div class="naming-more">
+                        <h2 class="sorting-slider-tile-name">Любительская <br> селфи-палка</h2>
+                        <p class="sorting-slider-tile-cost">500 ₽</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sorting-slider-tile profi">
+                    <a class="sorting-slider-tile-profi" href="#">
+                      <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
+                      <div class="naming-more">
+                        <h2 class="sorting-slider-tile-name">Профеcсиональная <br> селфи-палка</h2>
+                        <p class="sorting-slider-tile-cost">1500 ₽</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sorting-slider-tile water">
+                    <a class="sorting-slider-tile-water" href="#">
+                      <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
+                      <div class="naming-more">
+                        <h2 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h2>
+                        <p class="sorting-slider-tile-cost">2500 ₽</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sorting-slider-tile follow">
+                    <a class="sorting-slider-tile-follow" href="#">
+                      <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
+                      <div class="naming-more">
+                        <h2 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h2>
+                        <p class="sorting-slider-tile-cost">1500 ₽</p>
+                      </div>
+                    </a>
+                  </li>
                 </ul>
-                <a class="sorting-slider-list-shift" href="#">вперед</a>
-              </div>
-            </section>
+                <div class="sorting-slider-button-item">
+                  <a class="sorting-slider-button" href="#">Загрузить ещё</a>
+                </div>
+                <div class="choice-slider-box">
+                  <a class="choice-slider-list-shift" href="#">назад</a>
+                  <ul class="choice-slider-list">
+                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">1</a></li>
+                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">2</a></li>
+                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">3</a></li>
+                    <li class="choice-slider">...</li>
+                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">15</a></li>
+                  </ul>
+                  <a class="choice-slider-list-shift" href="#">вперед</a>
+                </div>
+              </section>
+            </div>
           </div>
+          </section>
         </div>
-        </section>
       </div>
     </main>
     <footer class="page-footer">
@@ -192,7 +209,8 @@
         <ul class="page-footer-title">
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">Магазин Девайс</h2>
-            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
+            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36"
+                alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
           </li>
         </ul>
