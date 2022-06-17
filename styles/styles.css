@@ -52,7 +52,8 @@ html {
 .contacts-more,
 .form-email-button,
 .filter-fill-button,
-.sorting-slider-list-shift {
+.sorting-slider-list-shift,
+.choice-slider-list-shift {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -174,13 +175,13 @@ html {
 }
 
 .filter-title,
-.sorting-title,
 .sorting-slider-button {
   font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
   color: black;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -882,12 +883,18 @@ html {
   width: 1040px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
 
   outline: 5px solid rgba(12, 158, 43, 0.5);
   outline-offset: -5px;
+}
+
+.select-cost {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
 }
 
 .check-color {
@@ -927,6 +934,9 @@ html {
 }
 
 .filter-more {
+  margin: 0;
+  padding: 0;
+  width: 260px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
