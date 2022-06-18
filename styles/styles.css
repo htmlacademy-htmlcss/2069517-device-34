@@ -880,9 +880,10 @@ html {
 }
 
 .sorting {
-  width: 1040px;
+  width: 1060px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 15px;
   display: flex;
   justify-content: space-between;
 
@@ -895,6 +896,48 @@ html {
   margin: 0;
   padding: 0;
   flex-direction: column;
+}
+
+.slider-select-combo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-select-lineone {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-select-linetwo {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-select-dotone {
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
+}
+
+.slider-select-dottwo {
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
+}
+
+.slider-select-word {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .check-color {
