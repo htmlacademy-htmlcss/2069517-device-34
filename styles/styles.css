@@ -165,8 +165,8 @@ html {
 }
 
 .catalog-monopod-link,
-.filter-color,
-.filter-fill-bluetooth {
+.filter-fill-bluetooth,
+.check-color {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -933,6 +933,9 @@ html {
   width: 180px;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.slider-select-word-link {
   font-family: Rubik, sans-serif;
   font-size: 15px;
   line-height: 18px;
