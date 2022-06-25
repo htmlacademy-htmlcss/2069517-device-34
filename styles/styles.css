@@ -263,13 +263,63 @@ html {
 .navigation-item {
   margin: 0;
   padding: 0;
+  display:
+}
+
+.srch-glass {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+.search-conteiner {
+  margin: 0;
+  padding: 0;
   display: flex;
+  width: 520px;
+}
+
+.navigation-item-checkin {
+  margin: 0;
+  padding: 0;
+  margin-left: 27px;
+  width: 90px;
+}
+
+.button-search-side-checkin {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 48px;
+  width: 355px;
+  height: 40px;
+  border: 2px solid #000000;
+  border-radius: 20px 0 0 20px ;
+  background-color: transparent;
+  outline: 0;
+  }
+
+.button-search-side {
+  width: 158px;
+  height: 40px;
+  border: 2px solid #000000;
+  border-radius: 0 20px 20px 0 ;
+  background-color: transparent;
+  margin-left: -7px;
+  cursor: pointer;
+}
+
+.cart-amount {
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 5px;
 }
 
 .icon-head {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 12px;
 }
 
@@ -277,6 +327,12 @@ html {
   margin: 0;
   padding: 0;
   margin-left: 28px;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
 }
 
 .navigation-user {
@@ -292,7 +348,7 @@ html {
 .navigation-cart {
   margin: 0;
   padding: 0;
-  width: 240px;
+  width: 255px;
   display: flex;
   margin-left: auto;
   justify-content: space-between;
@@ -344,19 +400,19 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  margin-top: -90px;
+  margin-top: -150px;
 }
 
 .save-back {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  margin-top: -90px;
 }
 
 .slider-gallery-products {
-  margin: 0;
-  margin-bottom: 70px;
+  margin: 0 auto;
+  padding: 0;
+
 }
 
 .slider-products {
@@ -369,12 +425,12 @@ html {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  margin-top: -60px;
 }
 
 .slider-products-img {
   margin: 0 auto;
   padding: 0;
+  width: 560px;
 }
 
 .products-info-list {
@@ -397,7 +453,7 @@ html {
 }
 
 .products-description-more {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-top: 10px;
   width: 550px;
@@ -408,6 +464,13 @@ html {
   margin-bottom: 29px;
 }
 
+.inline {
+  position: relative;
+  border-top: 8px solid #FFE17F;
+  width: 220px;
+  z-index: -1;
+}
+
 .slider-gallery {
   margin: 0 auto;
   padding: 0;
@@ -415,7 +478,7 @@ html {
 }
 
 .products-title {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 59px;
 }
 
@@ -435,6 +498,28 @@ html {
   padding: 0;
 }
 
+.slider-prev {
+  position: relative;
+  left: 30px;
+  bottom: 360px;
+  background-color: transparent;
+}
+
+.slider-next {
+  position: relative;
+  left: 490px;
+  bottom: 360px;
+  background-color: transparent;
+}
+
+.slider-products-button-conteiner {
+  position: relative;
+  left: 1000px;
+  bottom: 210px;
+  border: none;
+
+}
+
 .page-container {
   width: 100%;
   margin: 0 auto;
@@ -444,12 +529,15 @@ html {
 .categories-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1160px;
   align-items: flex-start;
   list-style-type: none;
   margin-bottom: 70px;
+
+  outline: 5px solid rgba(56, 4, 245, 0.5);
+  outline-offset: -5px;
 }
 
 .back-categories {
@@ -463,47 +551,54 @@ html {
 }
 
 .services-back {
+  margin-top: 182px;
   background-color: #F0F0F0;
-
-}
-
-.services-slider {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .services-more {
+  position: relative;
+  top: -112px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1160px;
   margin-bottom: 70px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .servis-button-slider {
   margin: 0;
-  padding-top: 50px;
+  padding: 0;
+  padding-top: 60px;
   width: 160px;
-  height: 319px;
+  height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  outline: 5px solid rgba(25, 5, 136, 0.432);
+  outline-offset: -5px;
 }
 
 .services-delivery {
   width: 550px;
-  height: 319px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: start;
-  margin: 0;
-  padding: 0;
+
   justify-content: flex-start;
   align-items: flex-start;
+
+  outline: 5px solid rgba(25, 5, 136, 0.432);
+  outline-offset: -5px;
 }
 
 .services-slider-item-delivery {
@@ -512,8 +607,13 @@ html {
 
 .services-title {
   margin: 0;
-  margin-bottom: 10px;
-  padding-top: 70px;
+  margin-bottom: 34px;
+  padding: 0;
+}
+
+.services-description {
+  margin: 0;
+  padding: 0;
 }
 
 .services {
@@ -521,6 +621,9 @@ html {
   width: 200px;
   margin-top: 70px;
   padding: 0;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .services-order-more {
@@ -544,6 +647,9 @@ html {
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .service-link-more {
@@ -578,12 +684,18 @@ html {
   margin: 0 auto;
   padding: 0;
   margin-bottom: 70px;
+
+  outline: 5px solid rgba(209, 245, 3, 0.5);
+  outline-offset: -5px;
 }
 
 .contacts-item {
   width: 520px;
   margin: 0;
   padding: 0;
+
+  outline: 5px solid rgba(31, 8, 6, 0.5);
+  outline-offset: -5px;
 }
 
 .contacts-title {
@@ -636,6 +748,9 @@ html {
   padding-top: 40px;
   text-align: start;
   list-style-type: none;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .back-subscription {
@@ -649,6 +764,9 @@ html {
   margin: 0 auto;
   padding: 0;
   margin-bottom: 70px;
+
+  outline: 5px solid rgba(31, 8, 6, 0.5);
+  outline-offset: -5px;
 }
 
 .subscription-list {
@@ -662,6 +780,10 @@ html {
   padding: 0;
   margin-top: 64px;
   margin-bottom: 150px;
+
+
+  outline: 5px solid rgba(31, 8, 6, 0.5);
+  outline-offset: -5px;
 }
 
 .subscription-description-text {
@@ -669,6 +791,9 @@ html {
   padding: 0;
   margin-top: 74px;
   margin-bottom: 150px;
+
+  outline: 5px solid rgba(31, 8, 6, 0.5);
+  outline-offset: -5px;
 }
 
 .subscription-title-more {
@@ -681,17 +806,26 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
+
+  outline: 5px solid rgba(31, 8, 6, 0.5);
+  outline-offset: -5px;
 }
 
 .subscription-this {
   margin: 0;
   padding: 0;
+
+  outline: 5px solid rgba(31, 8, 6, 0.5);
+  outline-offset: -5px;
 }
 
 .bottom-page {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .page-footer-title {
@@ -699,6 +833,10 @@ html {
   width: 260px;
   text-align: start;
   margin: 0;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .footer-delivery-warranty-contacts-list {
@@ -706,6 +844,9 @@ html {
   padding-top: 60px;
   width: 600px;
   text-align: center;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .footer-delivery-warranty-contacts-item-soc {
@@ -718,6 +859,9 @@ html {
   text-align: end;
   padding: 0 auto;
   padding-top: 135px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .footer-delivery-warranty-contacts-link {
@@ -747,6 +891,9 @@ html {
   margin: 0 auto;
   padding: 0;
   margin-bottom: 35px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .catalog-item {
@@ -787,6 +934,9 @@ html {
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
+
+  outline: 5px solid rgba(12, 158, 43, 0.5);
+  outline-offset: -5px;
 }
 
 .select-cost {
@@ -851,11 +1001,18 @@ html {
 .filter-title {
   margin: 0;
   padding: 20px 0;
+
+
+  outline: 5px solid rgba(77, 5, 136, 0.5);
+  outline-offset: -5px;
 }
 
 .sorting-choice {
   margin: 0;
   padding: 15px 0;
+
+  outline: 5px solid rgba(77, 5, 136, 0.5);
+  outline-offset: -5px;
 }
 
 .sorting-select-catalog {
@@ -874,6 +1031,9 @@ html {
   margin: 0;
   padding: 0;
   width: 260px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .cotalog-slider-more {
@@ -881,6 +1041,9 @@ html {
   padding: 0;
   width: 840px;
   background-color: white;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .grid-container {
@@ -903,6 +1066,9 @@ html {
 .sorting-slider-tile {
   width: 360px;
   min-height: 450px;
+
+  outline: 5px solid rgba(182, 247, 4, 0.5);
+  outline-offset: -5px;
 }
 
 .naming-more {
