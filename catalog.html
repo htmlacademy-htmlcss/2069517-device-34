@@ -16,10 +16,14 @@
             alt="логотип Девайс"></a>
         <div class="navigation-container">
           <ul class="navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item search-conteiner">
               <form action="https://echo.htmlacademy.ru/" method="POST">
-                <label><input type="search" placeholder="Текст поиска" name="search-date"></label>
-                <button class="navigation-link-head button" type="submit">Найти</button>
+                <label>
+                  <img class="srch-glass" src="images/srchglass.svg" fill="currentcolor" width="16" height="16"
+                    viewbox="0 0 16 16" alt="лупа">
+                  <input class="button-search-side-checkin" type="search" placeholder="Текст поиска" name="search-date">
+                </label>
+                <button class="navigation-link-head button-search-side" type="submit">Найти</button>
               </form>
             </li>
             <li class="navigation-item">
@@ -34,7 +38,10 @@
               <a class="navigation-link-head" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
+              <img class="cart-amount" src="images/cart-amount.svg" fill="currentcolor" width="21" height="21"
+                viewbox="0 0 21 21" alt="лого корзина">
+              <img class="icon-head" src="images/logo-cart.svg" fill="currentcolor" width="16" height="14"
+                viewbox="0 0 16 14" alt="лого корзина">
               <a class="navigation-link-head" href="#">Корзина</a>
             </li>
           </ul>
@@ -68,9 +75,11 @@
             <ul class="catalog-monopod-list">
               <li class="catalog-monopod-item">
                 <a class="catalog-monopod-link" href="index.html">Главная</a>
+                <img class="catalog-triangle" src="images/Vector-triangle.svg" width="4" height="7" alt="стрелка">
               </li>
               <li>
                 <a class="catalog-monopod-link" href="catalog.html">Каталог товаров</a>
+                <img class="catalog-triangle" src="images/Vector-triangle.svg" width="4" height="7" alt="стрелка">
               </li>
               <li>
                 <a class="catalog-monopod-link">Моноподы для селфи</a>
@@ -88,11 +97,9 @@
                 <option class="sorting-choice-radio-label" value="for-price">По цене</option>
               </select>
             </div>
-            <div class="sorting-choice button">
-              <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-              <label class="sorting-choice sorting-max-label"></label>
-              <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-              <label class="sorting-choice sorting-min-label"></label>
+            <div class="sorting-choice-triangle">
+              <img class="sorting-radio-up" src="images/triangle-sorting-up.svg" width="11" height="10" alt="up">
+              <img class="sorting-radio-down" src="images/triangle-sorting-down.svg" width="11" height="10" alt="down">
             </div>
           </section>
           <div class="sorting-select-catalog">
@@ -155,7 +162,7 @@
                       </a>
                     </li>
                     <li class="sorting-slider-tile profi">
-                      <a class="sorting-slider-tile-profi" href="#">
+                      <a class="sorting-slider-tile-user" href="#">
                         <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
                         <div class="naming-more">
                           <h2 class="sorting-slider-tile-name">Профеcсиональная <br> селфи-палка</h2>
@@ -164,7 +171,7 @@
                       </a>
                     </li>
                     <li class="sorting-slider-tile water">
-                      <a class="sorting-slider-tile-water" href="#">
+                      <a class="sorting-slider-tile-user" href="#">
                         <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
                         <div class="naming-more">
                           <h2 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h2>
@@ -173,7 +180,7 @@
                       </a>
                     </li>
                     <li class="sorting-slider-tile follow">
-                      <a class="sorting-slider-tile-follow" href="#">
+                      <a class="sorting-slider-tile-user" href="#">
                         <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
                         <div class="naming-more">
                           <h2 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h2>
@@ -209,9 +216,9 @@
         <ul class="page-footer-title">
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">Магазин Девайс</h2>
-            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36"
-                alt="логотип Девайс"></a>
+            <a><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
+            <div class="yellow-line-footer"></div>
           </li>
         </ul>
         <ul class="page-footer-title footer-delivery-warranty-contacts-list">
@@ -226,13 +233,15 @@
           <li class="footer-delivery-warranty-contacts-item">
             <div class="footer-delivery-warranty-contacts-item-soc">
               <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img
-                  src="images/logo-telegramm.svg" width="40" height="40" alt="telegramm"></a>
+                  src="images/logo-telegramm.svg" width="40" height="40" alt="telegramm">
+              </a>
               <a class="footer-delivery-warranty-contacts-socnetwork-link"
-                href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo-youtube.svg" width="40"
-                  height="40" alt="youtube"></a>
-              <a class="footer-delivery-warranty-contacts-socnetwork-link"
-                href="https://twitter.com/htmlacademy_ru"><img src="images/logo-twitter.svg" width="40" height="40"
-                  alt="twitter"></a>
+                href="https://www.youtube.com/user/htmlacademyru">
+                <img src="images/logo-youtube.svg" width="40" height="40" alt="youtube">
+              </a>
+              <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru">
+                <img src="images/logo-twitter.svg" width="40" height="40" alt="twitter">
+              </a>
             </div>
           </li>
         </ul>

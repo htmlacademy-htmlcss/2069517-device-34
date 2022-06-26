@@ -17,11 +17,11 @@
           <ul class="navigation-user">
             <li class="navigation-item search-conteiner">
               <form action="https://echo.htmlacademy.ru/" method="POST">
-                  <label>
-                    <img class="srch-glass" src="images/srchglass.svg" fill="currentcolor" width="16" height="16"
-                      viewbox="0 0 16 16" alt="лупа">
-                    <input class="button-search-side-checkin" type="search" placeholder="Текст поиска" name="search-date">
-                  </label>
+                <label>
+                  <img class="srch-glass" src="images/srchglass.svg" fill="currentcolor" width="16" height="16"
+                    viewbox="0 0 16 16" alt="лупа">
+                  <input class="button-search-side-checkin" type="search" placeholder="Текст поиска" name="search-date">
+                </label>
                 <button class="navigation-link-head button-search-side" type="submit">Найти</button>
               </form>
             </li>
@@ -166,11 +166,14 @@
               <button class="slider-button slider-next button" type="button">
                 <img src="images/next-product.svg" width="20" height="60" viewbox="0 0 20 60" alt="next">
               </button>
-              <fieldset class="slider-products-button-conteiner">
-                <input class="slider-products-button button" type="radio" name="slider-radio-123" checked>
-                <input class="slider-products-button button" type="radio" name="slider-radio-123">
-                <input class="slider-products-button button" type="radio" name="slider-radio-123">
-              </fieldset>
+              <div class="slider-products-button-conteiner">
+                <img class="slider-products-button button" src="images/Ellipse-black-more.svg" width="12" height="12"
+                  alt="черная точка">
+                <img class="slider-products-button button" src="images/Ellipse-black.svg" width="12" height="12"
+                  alt="черный круг">
+                <img class="slider-products-button button" src="images/Ellipse-black.svg" width="12" height="12"
+                  alt="черный круг">
+              </div>
             </div>
           </section>
           <section class="categories">
@@ -300,20 +303,33 @@
         <section class="contacts">
           <ul class="contacts-more-list">
             <li class="contacts-item">
-              <h2 class="contacts-title">О нас</h2>
+              <h2 class="contacts-title">
+                <div class="black-line-contacts"></div>О нас
+              </h2>
               <p class="contacts-description-text">Огромный выбор гаджетов не оставит равнодушным <br> гика, который
                 есть в каждом из нас.</p>
               <p class="contacts-description-text">Мы можем доставить ваш товар в самые отдалённые <br> уголки России
                 транспортными компаниями:</p>
               <div class="contacts-tc-item">
-                <p class="contacts-tc">Меловые линии</p>
-                <p class="contacts-tc">СДИК</p>
-                <p class="contacts-tc">ТоксБерри</p>
+                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
+                    alt="желтая точка">
+                  <span>Меловые линии</span>
+                </p>
+                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
+                    alt="желтая точка">
+                  <span>СДИК</span>
+                </p>
+                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
+                    alt="желтая точка">
+                  <span>ТоксБерри</span>
+                </p>
               </div>
-              <a class="contacts-more" href="#">Подробнее о нас</a>
+              <a class="contacts-more" href="#">Подробнее о нас<div class="yellow-line-contacts"></div></a>
             </li>
             <li class="contacts-item">
-              <h3 class="contacts-title">Контакты</h3>
+              <h3 class="contacts-title">
+                <div class="black-line-contacts"></div>Контакты
+              </h3>
               <p class="contacts-description-text">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете
                 проверить работоспособность покупки. </p>
               <h4 class="contacts-name">Интернет-магазин «Девайс»</h4>
@@ -325,7 +341,7 @@
                 <p class="contacts-time-work">пн—пт: с 10:00 до 22:00</p>
                 <p class="contacts-time-work">сб—вс: с 10:00 до 19:00</p>
               </div>
-              <a class="contacts-more" href="#">Напишите нам</a>
+              <a class="contacts-more-our" href="#">Напишите нам<div class="yellow-line-contacts"></div></a>
             </li>
           </ul>
         </section>
@@ -341,14 +357,13 @@
               <li class="subscription-title-more">
                 <div class="subscription-title-more-link">
                   <form action="https://echo.htmlacademy.ru/" method="POST">
-                    <label><input type="email" placeholder="Ваш e-mail" name="subscription-date"></label>
+                    <label><input class="enter-mail" type="email" placeholder="Ваш e-mail"
+                        name="subscription-date"></label>
                     <button class="form-email-button button" type="submit">Подписаться</button>
                   </form>
                 </div>
-                <p class="subscription-this">
-                  <img class="subscription-icon" src="images/subscription-check-mark.svg" width="14" height="14"
-                    alt="лого галочка">Это бесплатно
-                </p>
+                <p class="subscription-this"><img class="subscription-icon" src="images/subscription-check-mark.svg"
+                    width="14" height="14" alt="лого галочка">Это бесплатно</p>
               </li>
             </ul>
           </section>
@@ -362,6 +377,7 @@
             <h2 class="visually-hidden">Магазин Девайс</h2>
             <a><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
+            <div class="yellow-line-footer"></div>
           </li>
         </ul>
         <ul class="page-footer-title footer-delivery-warranty-contacts-list">
@@ -376,13 +392,15 @@
           <li class="footer-delivery-warranty-contacts-item">
             <div class="footer-delivery-warranty-contacts-item-soc">
               <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img
-                  src="images/logo-telegramm.svg" width="40" height="40" alt="telegramm"></a>
+                  src="images/logo-telegramm.svg" width="40" height="40" alt="telegramm">
+              </a>
               <a class="footer-delivery-warranty-contacts-socnetwork-link"
-                href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo-youtube.svg" width="40"
-                  height="40" alt="youtube"></a>
-              <a class="footer-delivery-warranty-contacts-socnetwork-link"
-                href="https://twitter.com/htmlacademy_ru"><img src="images/logo-twitter.svg" width="40" height="40"
-                  alt="twitter"></a>
+                href="https://www.youtube.com/user/htmlacademyru">
+                <img src="images/logo-youtube.svg" width="40" height="40" alt="youtube">
+              </a>
+              <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru">
+                <img src="images/logo-twitter.svg" width="40" height="40" alt="twitter">
+              </a>
             </div>
           </li>
         </ul>
