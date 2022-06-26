@@ -248,10 +248,15 @@ html {
 }
 
 .logo {
+  display: inline-block;
   margin-left: 60px;
   margin-bottom: 20px;
   margin-top: -20px;
   padding: 0;
+}
+
+.logo:hover {
+  background-image: url("images/vector-triangle.svg") ;
 }
 
 .navigation {
@@ -323,6 +328,11 @@ html {
   outline: 0;
   }
 
+.button-search-side-checkin:focus {
+  border:  2px solid #AF4FFF;
+  outline: none;
+}
+
 .button-search-side {
   position: absolute;
   margin: 0;
@@ -334,6 +344,24 @@ html {
   background-color: transparent;
   margin-left: -2px;
   cursor: pointer;
+}
+
+.button-search-side:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.button-search-side:active {
+  background-color: #000000;
+  color: #726f6f;
+}
+
+.navigation-link-head:hover {
+  color: #726f6f;
+}
+
+.navigation-link-head:active {
+  color: #bdb8b8;
 }
 
 .cart-amount {
@@ -355,6 +383,14 @@ html {
   padding: 0;
   margin-left: 10px;
   text-decoration: none;
+}
+
+.navigation-link-head-login:hover {
+  color: #726f6f;
+}
+
+.navigation-link-head-login:active {
+  color: #bdb8b8;
 }
 
 .button {
@@ -394,6 +430,7 @@ html {
 }
 
 .navigation-list-catalog {
+  position: relative;
   margin: 0;
   padding: 0;
   width: 300px;
@@ -408,10 +445,18 @@ html {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  color: #726f6f;
+}
+
+.navigation-link:active {
+  color: #bdb8b8;
+}
+
 .catalog-plus {
-  padding-top: 8px;
-  padding-left: 14px;
-  width: 50px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
 }
 
 .navigation-warranty-contacts-link {
@@ -478,6 +523,11 @@ html {
   padding-top: 60px;
   padding-right: 30px;
   text-align: end;
+}
+
+.triangle-slider-prev:hover {
+  background: url("images/Vector-triangle-prev.svg");
+  color: #FFC700;
 }
 
 .products-description-more {
@@ -926,6 +976,21 @@ html {
   height: 52px;
   border: 3px solid #c4c4c4;
   background-color: transparent;
+}
+
+.form-email-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.form-email-button:focus {
+  box-shadow: inset 0 0 0 2px #AF4FFF;
+  outline: none;
+}
+
+.form-email-button:active {
+  background-color: #000000;
+  color: #444444;
 }
 
 .subscription-title-more-link {
