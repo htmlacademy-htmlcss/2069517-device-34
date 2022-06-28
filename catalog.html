@@ -16,10 +16,13 @@
             alt="логотип Девайс"></a>
         <div class="navigation-container">
           <ul class="navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item search-conteiner">
               <form action="https://echo.htmlacademy.ru/" method="POST">
-                <label><input type="search" placeholder="Текст поиска" name="search-date"></label>
-                <button class="navigation-link-head" type="submit">Найти</button>
+                <label>
+                  <img class="srch-glass" src="images/srchglass.svg" width="16" height="16" alt="лупа">
+                  <input class="button-search-side-checkin" type="search" placeholder="Текст поиска" name="search-date">
+                </label>
+                <button class="navigation-link-head button-search-side" type="submit">Найти</button>
               </form>
             </li>
             <li class="navigation-item">
@@ -34,6 +37,7 @@
               <a class="navigation-link-head" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
+              <img class="cart-amount" src="images/cart-amount.svg" width="21" height="21" alt="лого корзина">
               <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
               <a class="navigation-link-head" href="#">Корзина</a>
             </li>
@@ -43,8 +47,8 @@
           <ul class="navigation-list-catalog">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+              <svg class="catalog-plus" width="50" height="50"></svg>
             </li>
-            <img class="catalog-plus" src="images/catalog-logo-plus.svg" width="50" height="50" alt="плюсик">
           </ul>
           <ul class="navigation-warranty-contacts-link">
             <li class="navigation-item">
@@ -68,12 +72,14 @@
             <ul class="catalog-monopod-list">
               <li class="catalog-monopod-item">
                 <a class="catalog-monopod-link" href="index.html">Главная</a>
+                <img class="catalog-triangle" src="images/Vector-triangle.svg" width="4" height="7" alt="стрелка">
               </li>
               <li>
                 <a class="catalog-monopod-link" href="catalog.html">Каталог товаров</a>
+                <img class="catalog-triangle" src="images/Vector-triangle.svg" width="4" height="7" alt="стрелка">
               </li>
               <li>
-                <a class="catalog-monopod-link">Моноподы для селфи</a>
+                <a class="catalog-monopod-link" tabindex="0">Моноподы для селфи</a>
               </li>
             </ul>
           </div>
@@ -83,123 +89,146 @@
             <h2 class="filter-title">фильтр:</h2>
             <h2 class="filter-title">сортировка:</h2>
             <div class="sorting-choice">
-              <select class="sorting-radio-button" name="sorting-choice">
+              <select class="sorting-radio-button button" name="sorting-choice">
                 <option class="sorting-choice-radio-label" value="popular">Популярные</option>
                 <option class="sorting-choice-radio-label" value="for-price">По цене</option>
               </select>
             </div>
-            <div class="sorting-choice button">
-              <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-              <label class="sorting-choice sorting-max-label"></label>
-              <input class="sorting-radio-button" type="radio" name="sorting-radio-minmax">
-              <label class="sorting-choice sorting-min-label"></label>
+            <div class="sorting-choice-triangle">
+              <img class="sorting-radio-up" src="images/triangle-sorting-up.svg" width="11" height="10" alt="up">
+              <img class="sorting-radio-down" src="images/triangle-sorting-down.svg" width="11" height="10" alt="down">
             </div>
           </section>
-          <div class="sorting-select-catalog">
-            <div class="filter-more">
-              <section class="filter">
-                <form class="filter-fill" action="https://echo.htmlacademy.ru/" method="get">
-                  <fieldset class="select-cost">
-                    <legend>Стоимость</legend>
-                    <div class="slider-select-combo">
-                      <div class="slider-select-dotone">
-                        <img src="images/slider-select/Ellipse 16.svg" alt="dot-one">
+          <section>
+            <div class="sorting-select-catalog">
+              <div class="filter-more">
+                <section class="filter">
+                  <form class="filter-fill" action="https://echo.htmlacademy.ru/" method="get">
+                    <fieldset class="select-cost">
+                      <legend>Стоимость</legend>
+                      <div class="slider-select-combo">
+                        <div class="slider-select-dotone">
+                          <img src="images/slider-select/Ellipse-16.svg" alt="dot-one">
+                        </div>
+                        <div class="slider-select-lineone">
+                          <img src="images/slider-select/Line-5.svg" alt="line-dark">
+                        </div>
+                        <div class="slider-select-dottwo">
+                          <img src="images/slider-select/Ellipse-16-1.svg" alt="dot-two">
+                        </div>
+                        <div class="slider-select-linetwo">
+                          <img src="images/slider-select/Line-4.svg" alt="line-grey">
+                        </div>
                       </div>
-                      <div class="slider-select-lineone">
-                        <img src="images/slider-select/Line 5.svg" alt="line-dark">
-                      </div>
-                      <div class="slider-select-dottwo">
-                        <img src="images/slider-select/Ellipse 16-1.svg" alt="dot-two">
-                      </div>
-                      <div class="slider-select-linetwo">
-                        <img src="images/slider-select/Line 4.svg" alt="line-grey">
-                      </div>
-                    </div>
-                    <ul class="slider-select-word">
-                      <li class="slider-select-word-link">от 0</li>
-                      <li class="slider-select-word-link">до 5000</li>
-                    </ul>
-                  </fieldset>
-                  <div class="filter-fill-choice">
-                    <fieldset class="check-color">
-                      <legend>Цвет</legend>
-                      <label><input type="checkbox" name="area" checked value="черный">Черный</label>
-                      <label><input type="checkbox" name="area" checked value="Белый">Белый</label>
-                      <label><input type="checkbox" name="area" value="Синий">Синий</label>
-                      <label><input type="checkbox" name="area" value="Красный">Красный</label>
-                      <label><input type="checkbox" name="area" value="Розовый">Розовый</label>
+                      <ul class="slider-select-word">
+                        <li class="slider-select-word-link">от 0</li>
+                        <li class="slider-select-word-link">до 5000</li>
+                      </ul>
                     </fieldset>
+                    <div class="filter-fill-choice">
+                      <fieldset class="check-color">
+                        <legend>Цвет</legend>
+                        <label><input type="checkbox" name="area" checked value="черный">Черный</label>
+                        <label><input type="checkbox" name="area" checked value="Белый">Белый</label>
+                        <label><input type="checkbox" name="area" value="Синий">Синий</label>
+                        <label><input type="checkbox" name="area" value="Красный">Красный</label>
+                        <label><input type="checkbox" name="area" value="Розовый">Розовый</label>
+                      </fieldset>
+                    </div>
+                    <div class="filter-fill-bluetooth">
+                      <h4 class="filter-fill-field">Bluetooth</h4>
+                      <select class="filter-fill-bluetooth" name="question-one">
+                        <option class="filter-fill-bluetooth" value="available">Есть</option>
+                        <option class="filter-fill-bluetooth" value="not">Нет</option>
+                      </select>
+                    </div>
+                    <input type="submit" value="Показать">
+                  </form>
+                </section>
+              </div>
+              <div class="cotalog-slider-more">
+                <section class="cotalog-slider-monopod">
+                  <div class="grid-container">
+                    <ul class="sorting-slider-tile-card">
+                      <li class="sorting-slider-tile user">
+                        <div class="sorting-slider-tile-first">
+                          <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
+                          <div class="naming-more">
+                            <h2 class="sorting-slider-tile-name">Любительская <br> селфи-палка</h2>
+                            <p class="sorting-slider-tile-cost">500 ₽</p>
+                          </div>
+                        </div>
+                        <div class="sorting-slider-tile-second">
+                          <a class="sorting-slider-tile-user" href="#">
+                            <div class="sorting-slider-more">Подробнее</div>
+                            <div class="sorting-slider-more-line"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="sorting-slider-tile profi">
+                        <div class="sorting-slider-tile-first">
+                          <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
+                          <div class="naming-more">
+                            <h2 class="sorting-slider-tile-name">Профеcсиональная <br> селфи-палка</h2>
+                            <p class="sorting-slider-tile-cost">1500 ₽</p>
+                          </div>
+                        </div>
+                        <div class="sorting-slider-tile-second">
+                          <a class="sorting-slider-tile-user" href="#">
+                            <div class="sorting-slider-more">Подробнее</div>
+                            <div class="sorting-slider-more-line"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="sorting-slider-tile water">
+                        <div class="sorting-slider-tile-first">
+                          <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
+                          <div class="naming-more">
+                            <h2 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h2>
+                            <p class="sorting-slider-tile-cost">2500 ₽</p>
+                          </div>
+                        </div>
+                        <div class="sorting-slider-tile-second">
+                          <a class="sorting-slider-tile-user" href="#">
+                            <div class="sorting-slider-more">Подробнее</div>
+                            <div class="sorting-slider-more-line"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="sorting-slider-tile follow">
+                        <div class="sorting-slider-tile-first">
+                          <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
+                          <div class="naming-more">
+                            <h2 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h2>
+                            <p class="sorting-slider-tile-cost">1500 ₽</p>
+                          </div>
+                        </div>
+                        <div class="sorting-slider-tile-second">
+                          <a class="sorting-slider-tile-user" href="#">
+                            <div class="sorting-slider-more">Подробнее</div>
+                            <div class="sorting-slider-more-line"></div>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="filter-fill-bluetooth">
-                    <h4 class="filter-fill-field">Bluetooth</h4>
-                    <select class="filter-fill-bluetooth" name="question-one">
-                      <option class="filter-fill-bluetooth" value="available">Есть</option>
-                      <option class="filter-fill-bluetooth" value="not">Нет</option>
-                    </select>
+                  <div class="sorting-slider-button-item">
+                    <a class="sorting-slider-button" href="#">Загрузить ещё</a>
                   </div>
-                  <input type="submit" value="Показать">
-                </form>
-              </section>
+                  <div class="choice-slider-box">
+                    <a class="choice-slider-list-shift" href="#">назад</a>
+                    <ul class="choice-slider-list">
+                      <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">1</a></li>
+                      <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">2</a></li>
+                      <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">3</a></li>
+                      <li class="choice-slider">...</li>
+                      <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">15</a></li>
+                    </ul>
+                    <a class="choice-slider-list-shift" href="#">вперед</a>
+                  </div>
+                </section>
+              </div>
             </div>
-            <div class="cotalog-slider-more">
-              <section class="cotalog-slider-monopod">
-                <div class="grid-container">
-                  <ul class="sorting-slider-tile-card">
-                    <li class="sorting-slider-tile user">
-                      <a class="sorting-slider-tile-user" href="#">
-                        <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
-                        <div class="naming-more">
-                          <h2 class="sorting-slider-tile-name">Любительская <br> селфи-палка</h2>
-                          <p class="sorting-slider-tile-cost">500 ₽</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="sorting-slider-tile profi">
-                      <a class="sorting-slider-tile-profi" href="#">
-                        <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
-                        <div class="naming-more">
-                          <h2 class="sorting-slider-tile-name">Профеcсиональная <br> селфи-палка</h2>
-                          <p class="sorting-slider-tile-cost">1500 ₽</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="sorting-slider-tile water">
-                      <a class="sorting-slider-tile-water" href="#">
-                        <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
-                        <div class="naming-more">
-                          <h2 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h2>
-                          <p class="sorting-slider-tile-cost">2500 ₽</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="sorting-slider-tile follow">
-                      <a class="sorting-slider-tile-follow" href="#">
-                        <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
-                        <div class="naming-more">
-                          <h2 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h2>
-                          <p class="sorting-slider-tile-cost">1500 ₽</p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="sorting-slider-button-item">
-                  <a class="sorting-slider-button" href="#">Загрузить ещё</a>
-                </div>
-                <div class="choice-slider-box">
-                  <a class="choice-slider-list-shift" href="#">назад</a>
-                  <ul class="choice-slider-list">
-                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">1</a></li>
-                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">2</a></li>
-                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">3</a></li>
-                    <li class="choice-slider">...</li>
-                    <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">15</a></li>
-                  </ul>
-                  <a class="choice-slider-list-shift" href="#">вперед</a>
-                </div>
-              </section>
-            </div>
-          </div>
           </section>
         </div>
       </div>
@@ -212,6 +241,7 @@
             <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36"
                 alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
+            <div class="yellow-line-footer"></div>
           </li>
         </ul>
         <ul class="page-footer-title footer-delivery-warranty-contacts-list">
@@ -225,14 +255,16 @@
           </li>
           <li class="footer-delivery-warranty-contacts-item">
             <div class="footer-delivery-warranty-contacts-item-soc">
-              <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy"><img
-                  src="images/logo-telegramm.svg" width="40" height="40" alt="telegramm"></a>
+              <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://t.me/htmlacademy">
+                <svg class="logo-telegramm" width="40" height="40"></svg>
+              </a>
               <a class="footer-delivery-warranty-contacts-socnetwork-link"
-                href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo-youtube.svg" width="40"
-                  height="40" alt="youtube"></a>
-              <a class="footer-delivery-warranty-contacts-socnetwork-link"
-                href="https://twitter.com/htmlacademy_ru"><img src="images/logo-twitter.svg" width="40" height="40"
-                  alt="twitter"></a>
+                href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="logo-youtube" width="40" height="40"></svg>
+              </a>
+              <a class="footer-delivery-warranty-contacts-socnetwork-link" href="https://twitter.com/htmlacademy_ru">
+                <svg class="logo-twitter" width="40" height="40"></svg>
+              </a>
             </div>
           </li>
         </ul>
@@ -242,9 +274,9 @@
           </li>
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">logo htmlacademy</h2>
-            <a class="footer-phone-logohtmlacademy-link" href="https://htmlacademy.ru"><img
-                class="footer-phone-logohtmlacademy" src="images/logo-htmlacademy.svg" width="115" height="33"
-                alt="логотип htmlacademyfooter"></a>
+            <a class="footer-phone-logohtmlacademy-link" href="https://htmlacademy.ru">
+              <svg class="footer-phone-logohtmlacademy" width="115" height="33"></svg>
+            </a>
           </li>
         </ul>
       </div>
