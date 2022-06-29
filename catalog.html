@@ -39,15 +39,58 @@
             <li class="navigation-item">
               <img class="cart-amount" src="images/cart-amount.svg" width="21" height="21" alt="лого корзина">
               <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
-              <a class="navigation-link-head" href="#">Корзина</a>
+              <a class="navigation-link-head cart-uncover" href="#">Корзина</a>
+              <div class="cart-windows">
+                <img class="cart-win-triangle" src="images/cart-win-triangle.svg" width="14" height="6">
+                <ul class="cart-win-list">
+                  <li class="cart-win-link">
+                    <a class="cart-visual" href="catalog.html">
+                      <img class="cart-win-image" src="images/products/product-1.jpg" width="39" height="43"
+                        alt="любительская селфи-палка">
+                      <p class="cart-win-text">Любительская селфи-палка</p>
+                    </a>
+                    <svg class="win-cross" width="10" height="10"></svg>
+                  </li>
+                  <li class="cart-win-link">
+                    <a class="cart-visual" href="catalog.html">
+                      <img class="cart-win-image" src="images/products/product-2.jpg" width="39" height="43"
+                        alt="профессиональная селфи-палка">
+                      <p class="cart-win-text">Профессиональная селфи-палка</p>
+                    </a>
+                    <svg class="win-cross" width="10" height="10"></svg>
+                  </li>
+                  <li class="cart-win-link cart-win-amount">
+                    <p class="text-cart">Товаров: 2</p>
+                    <p class="text-cart">Сумма: 2000 ₽</p>
+                  </li>
+                  <li class="cart-win-link">
+                    <button class="cart-win-button">Открыть корзину</button>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
         <div class="navigation-list-catalog-container">
           <ul class="navigation-list-catalog">
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-              <svg class="catalog-plus" width="50" height="50"></svg>
+              <a class="navigation-link" href="catalog.html">Каталог товаров
+                <svg class="catalog-plus" width="50" height="50"></svg>
+              </a>
+              <ul class="catalog-window">
+                <li class="catalog-win-item">
+                  <a class="catalog-win-link" href="catalog.html">Виртуальная реальность</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Моноподы для селфи</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Экшн-камеры</a>
+                </li>
+                <li class="catalog-win-item">
+                  <a class="catalog-win-link" href="catalog.html">Фитнес-браслеты</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Умные часы</a>
+                </li>
+                <li class="catalog-win-item">
+                  <a class="catalog-win-link" href="catalog.html">Квадрокоптеры</a>
+                </li>
+              </ul>
             </li>
           </ul>
           <ul class="navigation-warranty-contacts-link">
@@ -103,18 +146,19 @@
             <div class="sorting-select-catalog">
               <div class="filter-more">
                 <section class="filter">
+                  <img class="filter-line" src="images/line-filter.svg">
                   <form class="filter-fill" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="select-cost">
-                      <legend>Стоимость</legend>
+                      <legend class="select-cost-title">Стоимость</legend>
                       <div class="slider-select-combo">
-                        <div class="slider-select-dotone">
-                          <img src="images/slider-select/Ellipse-16.svg" alt="dot-one">
+                        <div class="slider-select-dotone slider-select-new">
+                          <span class="coma-select"></span>
                         </div>
                         <div class="slider-select-lineone">
                           <img src="images/slider-select/Line-5.svg" alt="line-dark">
                         </div>
-                        <div class="slider-select-dottwo">
-                          <img src="images/slider-select/Ellipse-16-1.svg" alt="dot-two">
+                        <div class="slider-select-dottwo slider-select-new">
+                          <span class="coma-select"></span>
                         </div>
                         <div class="slider-select-linetwo">
                           <img src="images/slider-select/Line-4.svg" alt="line-grey">
@@ -126,23 +170,55 @@
                       </ul>
                     </fieldset>
                     <div class="filter-fill-choice">
+                      <img class="filter-line-two" src="images/line-filter.svg">
                       <fieldset class="check-color">
-                        <legend>Цвет</legend>
-                        <label><input type="checkbox" name="area" checked value="черный">Черный</label>
-                        <label><input type="checkbox" name="area" checked value="Белый">Белый</label>
-                        <label><input type="checkbox" name="area" value="Синий">Синий</label>
-                        <label><input type="checkbox" name="area" value="Красный">Красный</label>
-                        <label><input type="checkbox" name="area" value="Розовый">Розовый</label>
+                        <legend class="check-color-text">Цвет</legend>
+                        <label class="checkbox-color" for="new"><input class="visually-hidden checkbox-color-input"
+                            id="new" type="checkbox" name="area" checked value="черный">
+                          <span class="control-mark"></span><span
+                            class="checkbox-color-input-text">Черный</span></label>
+                        <label class="checkbox-color"><input class="visually-hidden checkbox-color-input" id="new"
+                            type="checkbox" name="area" checked value="Белый">
+                          <span class="control-mark"></span><span class="checkbox-color-input-text">Белый</span></label>
+                        <label class="checkbox-color"><input class="visually-hidden checkbox-color-input" id="new"
+                            type="checkbox" name="area" value="Синий">
+                          <span class="control-mark"></span><span class="checkbox-color-input-text">Синий</span></label>
+                        <label class="checkbox-color"><input class="visually-hidden checkbox-color-input" id="new"
+                            type="checkbox" name="area" value="Красный">
+                          <span class="control-mark"></span><span
+                            class="checkbox-color-input-text">Красный</span></label>
+                        <label class="checkbox-color"><input class="visually-hidden checkbox-color-input" id="new"
+                            type="checkbox" name="area" value="Розовый">
+                          <span class="control-mark"></span><span
+                            class="checkbox-color-input-text">Розовый</span></label>
                       </fieldset>
                     </div>
                     <div class="filter-fill-bluetooth">
+                      <img class="filter-line-three" src="images/line-filter.svg">
                       <h4 class="filter-fill-field">Bluetooth</h4>
-                      <select class="filter-fill-bluetooth" name="question-one">
-                        <option class="filter-fill-bluetooth" value="available">Есть</option>
-                        <option class="filter-fill-bluetooth" value="not">Нет</option>
-                      </select>
+                      <ul class="filter-fill-bluetooth-radio"></ul>
+                      <li class="filter-option">
+                        <label class="radio-bluetooth">
+                          <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth-option"
+                            value="with-Bluetooth" id="filter-yes" checked>
+                          <span class="control-mark-radio"></span>
+                          <span class="checkbox-color-input-text">Есть</span>
+                        </label>
+                      </li>
+                      <li class="filter-option">
+                        <label class="radio-bluetooth">
+                          <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth-option"
+                            value="without-Bluetooth" id="filter-no">
+                          <span class="control-mark-radio"></span>
+                          <span class="checkbox-color-input-text">Нет</span>
+                        </label>
+                      </li>
+                      </ul>
                     </div>
-                    <input type="submit" value="Показать">
+                    <div class="filter-new-vision-button">
+                      <button class="filter-new-vision" type="submit">Показать</button>
+                      <span class="filter-yellow-line"></span>
+                    </div>
                   </form>
                 </section>
               </div>
