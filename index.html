@@ -35,7 +35,7 @@
               <a class="navigation-link-head" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <img class="cart-amount" src="images/cart-amount.svg" width="21" height="21" alt="лого корзина">
+              <span class="cart-amount-number">2</span>
               <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
               <a class="navigation-link-head cart-uncover" href="#">Корзина</a>
               <div class="cart-windows">
@@ -116,8 +116,8 @@
                     height="60" alt="previous"></a>
                 <a href="#"><img class="triangle-slider-next slider-next" src="images/next-product.svg" width="20"
                     height="60" alt="next"></a>
-                <h2 class="slider-products-img"><img src="images/slider-quadrocopter.png" width="560"
-                    height="560" alt="quadrocopter-big"></h2>
+                <h2 class="slider-products-img"><img src="images/slider-quadrocopter.png" width="560" height="560"
+                    alt="quadrocopter-big"></h2>
                 <div class="products-info-list">
                   <ul class="products-list">
                     <li class="products-items">
@@ -358,46 +358,9 @@
             </ul>
             <ul class="service-link-more">
               <li class="service-link">
-                <a class="services-order-view" href="delivery.html">
+                <button class="services-order-view" type="menu">
                   <span class="services-order-text">Доставим редкий товар под заказ</span>
-                </a>
-                <ul class="delivery-window">
-                  <li>
-                    <h2>Доставка под заказ</h2>
-                    <img class="delivery-cross" src="images/delivery-cross.svg" width="26" height="26" alt="cross">
-                  </li>
-                  <li>
-                    <form>
-                      <ul class="delivery-window-ura">
-                        <li class="delivery-window-item">
-                          <label>Ваше имя:</label>
-                          <br>
-                          <input class="delivery-window-item-input" type="text" placeholder="введите имя" name="user name">
-                          <img class="user-icon-delivery-win" src="images/login-enter.svg" width="13" height="12">
-                          <br>
-                          <label>Что нужно привезти:</label>
-                          <br>
-                          <textarea name="comment" id="comment-field">в свободной форме</textarea>
-                          <br>
-                          <button class="delivery-window-intake" type="submit">Отправить</button>
-                        </li>
-                        <li class="delivery-window-item">
-                          <label>Ваш e-mail</label>
-                          <br>
-                          <input class="delivery-window-item-input" type="email" placeholder="почта" name="subscription-date">
-                          <img class="user-icon-delivery-win" src="images/delivery-letter.svg" width="15" height="12">
-                          <label>Колличество</label>
-                          <br>
-                          <div class="input-win-delivery">
-                            <input type="button" value="-" id="button-minus">
-                            <input type="number" step="1" min="1" id="num-count" value="1" name="about">
-                            <input type="button" value="+" id="button-plus">
-                          </div>
-                        </li>
-                      </ul>
-                    </form>
-                  </li>
-                </ul>
+                </button>
               </li>
             </ul>
             <ul class="service-link-sing">
@@ -406,6 +369,54 @@
               </li>
             </ul>
           </div>
+          <ul class="delivery-window">
+            <li class="delivery-window-title">
+              <h2 class="services-order-text-win">Доставка под заказ</h2>
+              <img class="delivery-cross" src="images/delivery-cross.svg" width="26" height="26" alt="cross">
+            </li>
+            <li>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <ul class="delivery-window-ura">
+                  <li class="delivery-window-item">
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Ваше имя:</span></label>
+                      <br>
+                      <input class="delivery-window-item-input" type="text" placeholder="Введите имя" name="user name">
+                      <img class="user-icon-delivery-win" src="images/login-enter.svg" width="13" height="12">
+                    </div>
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Ваш e-mail</span></label>
+                      <br>
+                      <input class="delivery-window-item-input" type="email" placeholder="почта"
+                        name="subscription-date">
+                      <img class="user-icon-delivery-win-letter" src="images/delivery-letter.svg" width="15"
+                        height="12">
+                    </div>
+                  </li>
+                  <li class="delivery-window-item">
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Что нужно привезти:</span></label>
+                      <br>
+                      <textarea class="delivery-window-item-link-field text-size" name="comment"
+                        id="comment-field">В свободной форме</textarea>
+                    </div>
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Колличество:</span></label>
+                      <br>
+                      <div class="input-win-delivery">
+                          <input class="win-minus" type="button" value="-" id="button-minus">
+                          <input class="win-number" type="number" step="1" min="1" id="num-count" value="1" name="about">
+                          <input class="win-plus" type="button" value="+" id="button-plus">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="delivery-window-item">
+                    <button class="delivery-window-intake" type="submit">Отправить<span class="yellow-line-win-delivery"></span></button>
+                  </li>
+                </ul>
+              </form>
+            </li>
+          </ul>
         </section>
         <section class="contacts">
           <ul class="contacts-more-list">
@@ -486,12 +497,13 @@
         <ul class="page-footer-title">
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">Магазин Девайс</h2>
-            <a><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
+            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36"
+                alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
             <div class="yellow-line-footer"></div>
           </li>
         </ul>
-        <ul class="page-footer-title footer-delivery-warranty-contacts-list">
+        <ul class="footer-delivery-warranty-contacts-list">
           <li>
             <h2 class="visually-hidden">доставка гарантия контакты</h2>
           </li>
@@ -515,7 +527,7 @@
             </div>
           </li>
         </ul>
-        <ul class="page-footer-title footer-delivery-warranty-contacts-logo-list">
+        <ul class="footer-delivery-warranty-contacts-logo-list">
           <li class="footer-delivery-warranty-contacts-item">
             <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </li>

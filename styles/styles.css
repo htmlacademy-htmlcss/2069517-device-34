@@ -58,7 +58,8 @@ html {
 .contacts-more-our,
 .sorting-slider-more,
 .cart-win-button,
-.filter-new-vision {
+.filter-new-vision,
+.delivery-window-intake {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -92,7 +93,8 @@ html {
 .services-title,
 .contacts-title,
 .subscription-title,
-.catalog-item {
+.catalog-item,
+.services-order-text-win {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -140,7 +142,8 @@ html {
 .filter-fill-field,
 .sorting-slider-tile-name,
 .check-color-text,
-.select-cost-title {
+.select-cost-title,
+.text-title-win {
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -186,7 +189,8 @@ html {
   text-transform: uppercase;
 }
 
-.slider-select-word-link {
+.slider-select-word-link,
+.cart-amount-number {
   font-family: Rubik, sans-serif;
   font-size: 15px;
   line-height: 18px;
@@ -198,7 +202,8 @@ html {
 .filter-fill-bluetooth,
 .check-color,
 .catalog-win-link,
-.checkbox-color-input-text {
+.checkbox-color-input-text,
+.delivery-window-item-link-field {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -223,14 +228,6 @@ html {
   line-height: 22px;
   font-weight: 400;
   color: black;
-}
-
-.sorting-slider-list-elements {
-  font-family: Rubik, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #444444;
 }
 
 .sorting-slider-list-elements {
@@ -388,10 +385,20 @@ html {
   color: #bdb8b8;
 }
 
-.cart-amount {
+.cart-amount-number {
   position: absolute;
-  margin-left: -5px;
-  margin-top: 5px;
+  top: 10px;
+  left: 130px;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  color: #000000;
+  padding-left: 1px;
 }
 
 .icon-head {
@@ -1115,6 +1122,7 @@ html {
 }
 
 .services-order-more {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
@@ -1177,56 +1185,138 @@ html {
 
 .services-order-view {
   text-decoration: none;
+  border: none;
 }
 
 .delivery-window {
   position: absolute;
-  width: 640px;
+  display: none;
+  left: 10%;
+  top: -970px;
+  width: 740px;
   margin: 0;
-  padding: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   border: 10px solid #000000;
   list-style-type: none;
   background-color: #FFFFFF;
-  display: none;
+  z-index: 2;
+}
+
+.delivery-window:hover {
+  display: block;
+}
+
+.delivery-window-title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  outline: 2px solid #AF4FFF;
+}
+
+.delivery-cross {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.delivery-window-ura {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  outline: 2px solid #AF4FFF;
 }
 
 .delivery-window-item {
   margin: 0;
   padding: 0;
-  justify-items: flex-end;
-  padding-left: 40px;
-
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.delivery-window-ura {
-  position: relative;
-  display: flex;
-  list-style-type: none;
+.delivery-window-item-link {
   margin: 0;
   padding: 0;
-  padding-top: 40px;
-  justify-content: flex-end;
-
-  outline: 2px solid #AF4FFF;
 }
 
 .user-icon-delivery-win {
   position: absolute;
+  top: 55px;
+  left: 320px;
+}
+
+.user-icon-delivery-win-letter {
+  position: absolute;
+  top: 55px;
+  right: 20px;
 }
 
 .delivery-window-item-input {
-  width: 220px;
-  height: 30px;
+  width: 340px;
+  height: 60px;
 }
 
 .delivery-window-item-input-more {
   width: 260px;
-  height: 30px;
+  height: 60px;
+}
+
+.delivery-window-item-link-field {
+  width: 500px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .input-win-delivery {
-  width: 30px;
-  height: 30px;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.win-number {
+  width: 60px;
+  height: 60px;
+}
+
+.delivery-window-intake {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.yellow-line-win-delivery {
+  position: absolute;
+  width: 190px;
+  height: 8px;
+  background: #FFE17F;
+  left: -25px;
+  top: 4px;
+  z-index: -1;
+}
+
+.delivery-window-intake:hover .yellow-line-win-delivery {
+  height: 40px;
+  top: -10px;
+  transition: 0.5s;
+}
+
+.delivery-window-intake:active .yellow-line-win-delivery {
+  background: #FFCC33;
+  transition: 0.5s;
+}
+
+.delivery-window-intake:focus .yellow-line-win-delivery {
+  outline: 2px solid #AF4FFF;
 }
 
 .services-order-item-container:focus-within + .delivery-window {
@@ -1332,7 +1422,7 @@ html {
 }
 
 .contacts-more:active+.yellow-line-contacts {
-  color: #FFE17F;
+  color: #FFc700;
   height: 40px;
   top: -5px;
   opacity: 1;
@@ -1395,6 +1485,7 @@ html {
 }
 
 .subscription-title-more {
+  position: relative;
   display: flex;
   justify-content: space-between;
   text-align: start;
@@ -1420,11 +1511,11 @@ html {
 }
 
 .form-email-button {
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
-  top: 4px;
-  left: -5px;
+  top: 2px;
+  right: 350px;
   width: 255px;
   height: 52px;
   border: 3px solid #c4c4c4;
@@ -1464,35 +1555,57 @@ html {
   margin: 0 auto;
 }
 
+.logo-footer {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 36px;
+}
+
+.logo-footer:hover {
+  opacity: .8;
+}
+
+.logo-footer:active {
+  opacity: .5;
+}
+
 .yellow-line-footer {
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 7px;
   background: #FFC700;
   z-index: 1;
-  top: 50px;
 }
 
 .page-footer-title {
+  margin: 0;
   padding: 0;
+  margin-top: 62px;
   width: 260px;
   text-align: start;
-  margin: 0;
 }
 
 .footer-delivery-warranty-contacts-list {
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 0;
+  margin-left: 25px;
+  margin-top: 110px;
   width: 600px;
   text-align: center;
 }
 
 .footer-delivery-warranty-contacts-item-soc {
-  padding-top: 60px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
 }
 
 .footer-delivery-warranty-contacts-item {
   position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 62px;
 }
 
 .footer-delivery-warranty-contacts-logo-list {
@@ -1500,7 +1613,7 @@ html {
   margin: 0 auto;
   text-align: end;
   padding: 0;
-  padding-top: 135px;
+  padding-top: 140px;
 }
 
 .footer-delivery-warranty-contacts-link {
@@ -1508,6 +1621,12 @@ html {
   padding: 0;
   margin-left: 40px;
   text-decoration: none;
+}
+
+.footer-phone-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
 }
 
 .footer-delivery-warranty-contacts-link:hover,
@@ -1530,24 +1649,10 @@ html {
   cursor: pointer;
 }
 
-.footer-phone-link {
+.page-footer-title-address {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-}
-
-.logo-footer {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-.logo-footer:hover {
-  opacity: .8;
-}
-
-.logo-footer:active {
-  opacity: .5;
+  margin-bottom: 64px;
 }
 
 .logo-telegramm {
@@ -1591,8 +1696,7 @@ html {
   background-image: url(../images/logo-htmlacademy.svg);
   margin: 0;
   padding: 0;
-  left: 180px;
-  top: 40px;
+  right: 0px;
 }
 
 .footer-phone-logohtmlacademy:hover {
@@ -1675,6 +1779,18 @@ html {
 
 .sorting-radio-button {
   background-color: transparent;
+}
+
+.sorting-radio-button:hover {
+  opacity: .5;
+}
+
+.sorting-radio-button:active {
+  opacity: .2;
+}
+
+.sorting-radio-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .sorting-radio-up {
@@ -1868,8 +1984,6 @@ filter-line-two {
   padding: 0;
   width: 260px;
   padding-top: 30px;
-
-  outline: 2px solid #AF4FFF;
 }
 
 .checkbox-color {
@@ -2150,6 +2264,11 @@ filter-line-two {
   opacity: .5;
 }
 
+.sorting-slider-button:focus {
+  border: 2px solid #707070;
+  outline: 2px solid #AF4FFF;
+}
+
 .sorting-slider-button-item {
   margin: 0;
   padding: 10px 0;
@@ -2175,6 +2294,10 @@ filter-line-two {
   opacity: .7;
 }
 
+.choice-slider-list-shift:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .choice-slider-box {
   margin: 0;
   padding: 0;
@@ -2198,4 +2321,16 @@ filter-line-two {
   padding: 0 16px;
   margin-top: 20px;
   opacity: .5;
+}
+
+.choice-slider:hover {
+  opacity: 1;
+}
+
+.choice-slider:active {
+  opacity: .2;
+}
+
+.sorting-slider-list-elements:focus {
+  outline: 2px solid #AF4FFF;
 }
