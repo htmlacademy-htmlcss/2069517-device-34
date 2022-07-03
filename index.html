@@ -25,7 +25,7 @@
               </form>
             </li>
             <li class="navigation-item-checkin">
-              <img class="icon-head" src="images/login-enter.svg" width="13" height="12" alt="лого входа">
+              <img class="icon-head" src="images/login-enter-header.svg" width="13" height="12" alt="лого входа">
               <a class="navigation-link-head" href="#">Войти</a>
             </li>
           </ul>
@@ -312,7 +312,6 @@
                 <div class="yellow-linetwo"></div>
                 <div class="yellow-linethree"></div>
               </div>
-              <div class="black-line"></div>
               <ul class="services-slider-list">
                 <li class="services-slider-item-delivery slider-delivery render-slider">
                   <div class="services-delivery">
@@ -385,7 +384,7 @@
                       <img class="user-icon-delivery-win" src="images/login-enter.svg" width="13" height="12">
                     </div>
                     <div class="delivery-window-item-link">
-                      <label><span class="text-title-win">Ваш e-mail</span></label>
+                      <label><span class="text-title-win">Ваш e-mail:</span></label>
                       <br>
                       <input class="delivery-window-item-input" type="email" placeholder="почта"
                         name="subscription-date">
@@ -400,14 +399,20 @@
                       <textarea class="delivery-window-item-link-field text-size" name="comment"
                         id="comment-field">В свободной форме</textarea>
                     </div>
-                    <div class="delivery-window-item-link">
+                    <div class="delivery-window-item-link win-delivery-about">
+                      <button class="win-info" type="button"></button>
+                      <div class="win-information">
+                        <img class="win-information-triangle" src="images/triangle-information.svg" width="16" height="4">
+                        <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+                      </div>
                       <label><span class="text-title-win">Колличество:</span></label>
                       <br>
                       <div class="input-win-delivery">
-                          <input class="win-minus" type="button" value="-" id="button-minus">
-                          <input class="win-number" type="number" step="1" min="1" id="num-count" value="1" name="about">
-                          <input class="win-plus" type="button" value="+" id="button-plus">
+                          <button class="win-button" type="button"><span class="win-minus"></span></button>
+                          <div class="win-number"><span class="win-number-one">1</span></div>
+                          <button class="win-button-plus" type="button"><span class="win-plus"></span></button>
                       </div>
+
                     </div>
                   </li>
                   <li class="delivery-window-item">
@@ -421,25 +426,15 @@
         <section class="contacts">
           <ul class="contacts-more-list">
             <li class="contacts-item">
-              <div class="black-line-contacts"></div>
               <h2 class="contacts-title">О нас</h2>
               <p class="contacts-description-text">Огромный выбор гаджетов не оставит равнодушным <br> гика, который
                 есть в каждом из нас.</p>
               <p class="contacts-description-text">Мы можем доставить ваш товар в самые отдалённые <br> уголки России
                 транспортными компаниями:</p>
               <div class="contacts-tc-item">
-                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
-                    alt="желтая точка">
-                  <span>Меловые линии</span>
-                </p>
-                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
-                    alt="желтая точка">
-                  <span>СДИК</span>
-                </p>
-                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
-                    alt="желтая точка">
-                  <span>ТоксБерри</span>
-                </p>
+                <p class="contacts-tc">Меловые линии</p>
+                <p class="contacts-tc">СДИК</p>
+                <p class="contacts-tc">ТоксБерри</p>
               </div>
               <div class="contacts-more-line">
                 <a class="contacts-more" href="#">Подробнее о нас</a>
@@ -447,7 +442,6 @@
               </div>
             </li>
             <li class="contacts-item">
-              <div class="black-line-contacts"></div>
               <h3 class="contacts-title">Контакты</h3>
               <p class="contacts-description-text">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете
                 проверить работоспособность покупки. </p>

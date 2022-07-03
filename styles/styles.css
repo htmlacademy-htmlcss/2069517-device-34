@@ -171,7 +171,8 @@ html {
 .page-footer-title-address,
 .footer-phone-link,
 .cart-win-text,
-.text-cart {
+.text-cart,
+.win-information {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -203,7 +204,8 @@ html {
 .check-color,
 .catalog-win-link,
 .checkbox-color-input-text,
-.delivery-window-item-link-field {
+.delivery-window-item-link-field,
+.win-number-one {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -230,7 +232,8 @@ html {
   color: black;
 }
 
-.sorting-slider-list-elements {
+.sorting-slider-list-elements,
+.delivery-window-item-input {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -961,6 +964,16 @@ html {
   margin-bottom: 70px;
 }
 
+.services-more::after {
+  position: absolute;
+  left: 280px;
+  width: 7px;
+  height: 320px;
+  background: #000000;
+  background-repeat: no-repeat;
+  content: "";
+}
+
 .servis-button-slider {
   position: relative;
   margin: 0;
@@ -1044,16 +1057,6 @@ html {
   display: block;
   z-index: 1;
   top: 225px;
-}
-
-.black-line {
-  position: absolute;
-  width: 7px;
-  height: 320px;
-  background: #000000;
-  z-index: 1;
-  top: 0px;
-  left: 280px;
 }
 
 .yellow-line {
@@ -1213,8 +1216,6 @@ html {
   position: relative;
   margin: 0;
   padding: 0;
-
-  outline: 2px solid #AF4FFF;
 }
 
 .delivery-cross {
@@ -1223,13 +1224,23 @@ html {
   right: 0px;
 }
 
+.delivery-cross:hover {
+  opacity: .5;
+}
+
+.delivery-cross:active {
+  opacity: .2;
+}
+
+.delivery-cross:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .delivery-window-ura {
   position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  outline: 2px solid #AF4FFF;
 }
 
 .delivery-window-item {
@@ -1258,30 +1269,178 @@ html {
 }
 
 .delivery-window-item-input {
-  width: 340px;
+  width: 320px;
   height: 60px;
+  padding-left: 20px;
+  background: #F0F0F0;
+  border: none;
 }
 
 .delivery-window-item-input-more {
-  width: 260px;
+  width: 200px;
   height: 60px;
 }
 
 .delivery-window-item-link-field {
-  width: 500px;
+  width: 480px;
   padding-top: 20px;
   padding-left: 20px;
+  background: #F0F0F0;
+  border: none;
+}
+
+.text-title-win {
+  position: relative;
+}
+
+.win-delivery-about {
+  position: relative;
+  width: 185px;
+  margin: 0;
+  padding: 0;
+}
+
+.win-info {
+  position: absolute;
+  left: 130px;
+  top: 5px;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid #FFE17F;
+  border-radius: 50%;
+  background-color: #FFE17F;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.win-info::after {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #000000;
+  right: 8px;
+  top: 3px;
+  content: "";
+}
+
+.win-info::before {
+  position: absolute;
+  width: 3px;
+  height: 7px;
+  background-color: #000000;
+  right: 8px;
+  top: 8px;
+  content: "";
+}
+
+.win-information {
+  position: absolute;
+  margin: 0;
+  padding-left: 19px;
+  width: 200px;
+  top: 35px;
+  left: -20px;
+  background: #000000;
+  display: none;
+}
+
+.win-information-triangle {
+  position: absolute;
+  right: 43px;
+  top: -4px;
+}
+
+.win-info:focus-within .win-information {
+  display: block;
 }
 
 .input-win-delivery {
   display: flex;
-  width: 60px;
+  width: 40px;
   height: 60px;
+  background: #F0F0F0;
+}
+
+.win-button, .win-button-plus {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
+  cursor: pointer;
+  border: none;
+}
+
+.win-button:hover {
+  opacity: .5;
+}
+
+.win-button:active {
+  opacity: .2;
+}
+
+.win-button:focus {
+  opacity: 1;
+  outline: 2px solid #AF4FFF;
+}
+
+.win-button-plus:hover {
+  opacity: .5;
+}
+
+.win-button-plus:active {
+  opacity: .2;
+}
+
+.win-button-plus:focus {
+  opacity: 1;
+  outline: 2px solid #AF4FFF;
+}
+
+.win-minus {
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background-color: #000000;
+  top: 45%;
+  right: 25%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  content: "";
+}
+
+.win-plus::before {
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background-color: #000000;
+  right: 22px;
+  top: 25px;
+  content: "";
+}
+
+.win-plus::after {
+  position: absolute;
+  width: 3px;
+  height: 16px;
+  background-color: #000000;
+  right: 28px;
+  top: 19px;
+  content: "";
 }
 
 .win-number {
-  width: 60px;
-  height: 60px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 29px;
+  padding-right: 29px;
+  background: #F0F0F0;
+}
+
+.win-number-one {
+ position: absolute;
+ top: 20px;
 }
 
 .delivery-window-intake {
@@ -1342,16 +1501,16 @@ html {
   margin: 0;
   padding: 0;
   margin-bottom: 48px;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
-.black-line-contacts {
+.contacts-item::before {
   position: absolute;
   width: 84px;
   height: 7px;
-  background: #000000;
-  z-index: 1;
-  top: 0;
+  background-color: #000000;
+
+  content: "";
 }
 
 .contacts-description-text {
@@ -1360,24 +1519,32 @@ html {
   margin-bottom: 30px;
 }
 
-.contacts-tc {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.ellipse-yellow {
-  margin: 0;
-  padding: 0;
-  margin-right: 26px;
-  position: relative;
-  top: -2px;
-}
-
 .contacts-tc-item {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+}
+
+.contacts-tc::before {
+  position: absolute;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #FFE17F;
+  content: "";
+}
+
+.contacts-tc {
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  padding-bottom: 19px;
 }
 
 .contacts-more-line {
@@ -1442,6 +1609,7 @@ html {
 }
 
 .contacts-more-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -1570,15 +1738,8 @@ html {
   opacity: .5;
 }
 
-.yellow-line-footer {
-  position: absolute;
-  width: 80px;
-  height: 7px;
-  background: #FFC700;
-  z-index: 1;
-}
-
 .page-footer-title {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-top: 62px;
@@ -1606,6 +1767,16 @@ html {
   margin: 0;
   padding: 0;
   margin-bottom: 62px;
+}
+
+.page-footer-title::before {
+  position: absolute;
+  top: 180px;
+  width: 80px;
+  height: 7px;
+  background: #FFC700;
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .footer-delivery-warranty-contacts-logo-list {
