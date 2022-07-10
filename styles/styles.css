@@ -381,12 +381,20 @@ html {
   color: #726f6f;
 }
 
+.button-search-side:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .navigation-link-head:hover {
   color: #726f6f;
 }
 
 .navigation-link-head:active {
   color: #bdb8b8;
+}
+
+.navigation-link-head:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .cart-amount-number {
@@ -507,6 +515,10 @@ html {
   opacity: 0.5;
 }
 
+.catalog-win-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .catalog-win-item {
   margin-right: 50px;
 }
@@ -607,6 +619,10 @@ html {
   opacity: 0.5;
 }
 
+.cart-visual:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .cart-win-triangle {
   position: absolute;
   left: 153px;
@@ -670,6 +686,10 @@ html {
   opacity: 0.5;
 }
 
+.win-cross:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .cart-windows:active {
   display: block;
 }
@@ -687,6 +707,10 @@ html {
 
 .cart-win-button:active {
   color: #777575;
+}
+
+.cart-win-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .page-container-index {
@@ -787,6 +811,10 @@ html {
   opacity: 0.4;
 }
 
+.triangle-slider:focus {
+  border: 2px solid #AF4FFF;
+}
+
 .triangle-slider-next {
   background-image: url(../images/next-product.svg);
 }
@@ -797,6 +825,10 @@ html {
 
 .triangle-slider-next:active {
   opacity: 0.4;
+}
+
+.triangle-slider-next:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .slider-next:focus-within+.win-slider-one {
@@ -865,6 +897,10 @@ html {
   transition: opacity 0.5s;
 }
 
+.slider-gallery:focus+.inline {
+  outline:2px solid #AF4FFF;
+}
+
 .products-title {
   margin: 0 auto;
   margin-top: 59px;
@@ -885,8 +921,6 @@ html {
   margin-right: 20px;
   padding: 0;
 }
-
-
 
 .slider-products-button-conteiner {
   position: absolute;
@@ -935,8 +969,7 @@ html {
 }
 
 .categories-items:focus {
-  opacity: 0.8;
-  box-shadow: inset 0 0 0 2px #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .back-categories {
@@ -1021,6 +1054,7 @@ html {
 
 .services-button:focus {
   color: #977d20;
+  outline: none;
   z-index: 2;
 }
 
@@ -1032,6 +1066,7 @@ html {
 
 .black-service-one:focus+.black-touch {
   display: block;
+  outline: 2px solid #AF4FFF;
   z-index: 1;
   top: 72px;
 }
@@ -1044,6 +1079,7 @@ html {
 
 .black-service-two:focus+.black-touch {
   display: block;
+  outline: 2px solid #AF4FFF;
   z-index: 1;
   top: 147px;
 }
@@ -1056,6 +1092,7 @@ html {
 
 .black-service-three:focus+.black-touch {
   display: block;
+  outline: 2px solid #AF4FFF;
   z-index: 1;
   top: 225px;
 }
@@ -1192,6 +1229,10 @@ html {
   border: none;
 }
 
+.services-order-view:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .delivery-window {
   position: absolute;
   display: none;
@@ -1234,7 +1275,8 @@ html {
 }
 
 .delivery-cross:focus {
-  outline: 2px solid #AF4FFF;
+  outline:  2px solid #AF4FFF;
+  outline-width: 5px;
 }
 
 .delivery-window-ura {
@@ -1285,6 +1327,19 @@ html {
   border: none;
 }
 
+.delivery-window-item-input:hover {
+  background-color: #dcdcdc;
+}
+
+.delivery-window-item-input:visited {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.delivery-window-item-input:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .delivery-window-item-input-more {
   width: 200px;
   height: 60px;
@@ -1296,6 +1351,20 @@ html {
   padding-left: 20px;
   background: #F0F0F0;
   border: none;
+  color: #1a1a1a;
+}
+
+.delivery-window-item-link-field:hover {
+  background-color: #dcdcdc;
+}
+
+.delivery-window-item-link-field:visited {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.delivery-window-item-link-field:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .text-title-win {
@@ -1606,6 +1675,10 @@ html {
   transition: opacity 0.5s;
 }
 
+.contacts-more:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .contacts-name {
   margin: 0;
   padding: 0;
@@ -1688,6 +1761,11 @@ html {
   background-color: transparent;
 }
 
+.enter-mail:focus {
+  background: #dcdcdc;
+  outline: none;
+}
+
 .form-email-button {
   position: absolute;
   margin: 0;
@@ -1746,6 +1824,11 @@ html {
 
 .logo-footer:active {
   opacity: 0.5;
+}
+
+.logo-footer:focus {
+  opacity: 1;
+  outline: 2px solid #AF4FFF;
 }
 
 .page-footer-title {
@@ -1823,6 +1906,18 @@ html {
   opacity: 0.6;
 }
 
+.footer-phone-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-delivery-warranty-contacts-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-phone-logohtmlacademy-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .footer-delivery-warranty-contacts-socnetwork-link {
   margin: 0 auto;
   padding: 0;
@@ -1870,6 +1965,10 @@ html {
 
 .logo-twitter:active {
   background-image: url(../images/logo-twitter-yellow-sw.svg);
+}
+
+.footer-delivery-warranty-contacts-socnetwork-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .footer-phone-logohtmlacademy {
@@ -2223,6 +2322,10 @@ filter-line-two {
 
 .visually-hidden {
   display: none;
+}
+
+.visually-hidden:focus {
+  outline:2px solid #AF4FFF;
 }
 
 .filter-fill-bluetooth {
