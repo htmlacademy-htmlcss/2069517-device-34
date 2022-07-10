@@ -272,11 +272,11 @@ html {
 }
 
 .logo:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .logo:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .logo:focus {
@@ -317,6 +317,7 @@ html {
 .navigation-item {
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .srch-glass {
@@ -499,11 +500,11 @@ html {
 }
 
 .catalog-win-link:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .catalog-win-link:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .catalog-win-item {
@@ -553,7 +554,7 @@ html {
 
 .catalog-plus:hover {
   background-image: url(../images/catalog-logo-minus.svg);
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .catalog-plus:active {
@@ -599,11 +600,11 @@ html {
 }
 
 .cart-visual:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .cart-visual:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .cart-win-triangle {
@@ -662,11 +663,11 @@ html {
 }
 
 .win-cross:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .win-cross:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .cart-windows:active {
@@ -779,11 +780,11 @@ html {
 }
 
 .triangle-slider:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .triangle-slider:active {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .triangle-slider-next {
@@ -791,11 +792,11 @@ html {
 }
 
 .triangle-slider-next:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .triangle-slider-next:active {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .slider-next:focus-within+.win-slider-one {
@@ -851,7 +852,7 @@ html {
   color: #FFE17F;
   height: 40px;
   top: -5px;
-  opacity: .7;
+  opacity: 0.7;
   z-index: -1;
   transition: top 0.5s;
 }
@@ -922,7 +923,7 @@ html {
 }
 
 .categories-items {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .categories-items:hover {
@@ -930,11 +931,11 @@ html {
 }
 
 .categories-items:active {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .categories-items:focus {
-  opacity: .8;
+  opacity: 0.8;
   box-shadow: inset 0 0 0 2px #AF4FFF;
 }
 
@@ -1147,7 +1148,7 @@ html {
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
-  opacity: .7;
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -1156,7 +1157,7 @@ html {
 }
 
 .services-order-item-container:active {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .service-link-more {
@@ -1225,11 +1226,11 @@ html {
 }
 
 .delivery-cross:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .delivery-cross:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .delivery-cross:focus {
@@ -1254,6 +1255,14 @@ html {
 .delivery-window-item-link {
   margin: 0;
   padding: 0;
+  margin-right: 40px;
+}
+
+.delivery-window-item-link-end {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 35px;
 }
 
 .user-icon-delivery-win {
@@ -1269,7 +1278,7 @@ html {
 }
 
 .delivery-window-item-input {
-  width: 320px;
+  width: 330px;
   height: 60px;
   padding-left: 20px;
   background: #F0F0F0;
@@ -1282,7 +1291,7 @@ html {
 }
 
 .delivery-window-item-link-field {
-  width: 480px;
+  width: 500px;
   padding-top: 20px;
   padding-left: 20px;
   background: #F0F0F0;
@@ -1373,11 +1382,11 @@ html {
 }
 
 .win-button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .win-button:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .win-button:focus {
@@ -1386,11 +1395,11 @@ html {
 }
 
 .win-button-plus:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .win-button-plus:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .win-button-plus:focus {
@@ -1584,7 +1593,7 @@ html {
   color: #FFE17F;
   height: 40px;
   top: -5px;
-  opacity: .7;
+  opacity: 0.7;
   z-index: -1;
   transition: top 0.5s;
 }
@@ -1732,11 +1741,11 @@ html {
 }
 
 .logo-footer:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .logo-footer:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .page-footer-title {
@@ -1811,7 +1820,7 @@ html {
 .footer-phone-link:active {
   color: #FFC700;
   text-decoration: underline;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .footer-delivery-warranty-contacts-socnetwork-link {
@@ -1877,7 +1886,7 @@ html {
 
 .footer-phone-logohtmlacademy:active {
   background-image: url(../images/logo-htmlacademy-white.svg);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .catalog-monopod {
@@ -1954,11 +1963,11 @@ html {
 }
 
 .sorting-radio-button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .sorting-radio-button:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .sorting-radio-button:focus {
@@ -1972,11 +1981,11 @@ html {
   top: 15px;
   right: 20px;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .sorting-radio-up:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .sorting-radio-up:active {
@@ -1990,11 +1999,11 @@ html {
   top: 15px;
   right: 5px;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .sorting-radio-down:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .sorting-radio-down:active {
@@ -2081,10 +2090,12 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 180px;
+  margin-top: 10px;
+  width: 160px;
   justify-content: space-between;
   list-style-type: none;
   margin-left: -11px;
+  opacity: 0.5;
 }
 
 
@@ -2175,11 +2186,11 @@ filter-line-two {
 }
 
 .checkbox-color:hover .control-mark {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .checkbox-color:active .control-mark {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .checkbox-color-input[type="checkbox"]:checked+.control-mark::before {
@@ -2241,11 +2252,11 @@ filter-line-two {
 }
 
 .radio-bluetooth:hover .control-mark-radio {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .radio-bluetooth:active .control-mark-radio {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .filter-input-radio[type="radio"]:checked+.control-mark-radio::before {
@@ -2339,7 +2350,7 @@ filter-line-two {
 
 .sorting-slider-tile-second:hover {
   display: block;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .sorting-slider-tile-second:active {
@@ -2352,7 +2363,7 @@ filter-line-two {
 }
 
 .sorting-slider-tile:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .sorting-slider-more-line {
@@ -2375,7 +2386,7 @@ filter-line-two {
   color: #ffc700;
   height: 40px;
   top: 164px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .sorting-slider-more {
@@ -2396,7 +2407,7 @@ filter-line-two {
   color: #ffc700;
   height: 40px;
   top: 164px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .naming-more {
@@ -2433,7 +2444,7 @@ filter-line-two {
 
 .sorting-slider-button:active {
   border: 2px solid #000000;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .sorting-slider-button:focus {
@@ -2463,7 +2474,7 @@ filter-line-two {
 }
 
 .choice-slider-list-shift:active {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .choice-slider-list-shift:focus {
@@ -2492,7 +2503,7 @@ filter-line-two {
   margin: 0;
   padding: 0 16px;
   margin-top: 20px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .choice-slider:hover {
@@ -2500,7 +2511,7 @@ filter-line-two {
 }
 
 .choice-slider:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .sorting-slider-list-elements:focus {
