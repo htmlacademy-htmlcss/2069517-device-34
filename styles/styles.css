@@ -2303,7 +2303,7 @@ filter-line-two {
   left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #cccccc;
   border-radius: 3px;
 }
 
@@ -2313,6 +2313,10 @@ filter-line-two {
 
 .checkbox-color:active .control-mark {
   opacity: 0.2;
+}
+
+.checkbox-color-input[type="checkbox"]:checked+.control-mark {
+  border: 2px solid #000000;
 }
 
 .checkbox-color-input[type="checkbox"]:checked+.control-mark::before {
@@ -2371,7 +2375,7 @@ filter-line-two {
   padding: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #cccccc;
   border-radius: 50%;
   left: -36px;
   bottom: 0px;
@@ -2383,6 +2387,10 @@ filter-line-two {
 
 .radio-bluetooth:active .control-mark-radio {
   opacity: 0.2;
+}
+
+.filter-input-radio[type="radio"]:checked+.control-mark-radio {
+  border: 2px solid #000000;
 }
 
 .filter-input-radio[type="radio"]:checked+.control-mark-radio::before {
