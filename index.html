@@ -25,7 +25,7 @@
               </form>
             </li>
             <li class="navigation-item-checkin">
-              <img class="icon-head" src="images/login-enter.svg" width="13" height="12" alt="лого входа">
+              <img class="icon-head" src="images/login-enter-header.svg" width="13" height="12" alt="лого входа">
               <a class="navigation-link-head" href="#">Войти</a>
             </li>
           </ul>
@@ -35,19 +35,59 @@
               <a class="navigation-link-head" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <img class="cart-amount" src="images/cart-amount.svg" width="21" height="21" alt="лого корзина">
+              <span class="cart-amount-number">2</span>
               <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
-              <a class="navigation-link-head" href="#">Корзина</a>
+              <a class="navigation-link-head cart-uncover" href="#">Корзина</a>
+              <div class="cart-windows">
+                <img class="cart-win-triangle" src="images/cart-win-triangle.svg" width="14" height="6">
+                <ul class="cart-win-list">
+                  <li class="cart-win-link">
+                    <a class="cart-visual" href="catalog.html">
+                      <img class="cart-win-image" src="images/products/product-1.jpg" width="39" height="43" alt="любительская селфи-палка">
+                      <p class="cart-win-text">Любительская селфи-палка</p>
+                    </a>
+                    <svg class="win-cross" width="10" height="10"></svg>
+                  </li>
+                  <li class="cart-win-link">
+                    <a class="cart-visual" href="catalog.html">
+                      <img class="cart-win-image" src="images/products/product-2.jpg" width="39" height="43" alt="профессиональная селфи-палка">
+                      <p class="cart-win-text">Профессиональная селфи-палка</p>
+                    </a>
+                    <svg class="win-cross" width="10" height="10"></svg>
+                  </li>
+                  <li class="cart-win-link cart-win-amount">
+                    <p class="text-cart">Товаров: 2</p>
+                    <p class="text-cart">Сумма: 2000 ₽</p>
+                  </li>
+                  <li class="cart-win-link">
+                    <button class="cart-win-button" type="submit">Открыть корзину</button>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
         <div class="navigation-list-catalog-container">
           <ul class="navigation-list-catalog">
             <li class="navigation-item">
-              <a class="navigation-link" tabindex="0" href="catalog.html">Каталог товаров</a>
-              <svg class="catalog-plus" width="50" height="50"></svg>
+              <a class="navigation-link" tabindex="0" href="catalog.html">Каталог товаров
+                <svg class="catalog-plus" width="50" height="50"></svg>
+              </a>
+              <ul class="catalog-window">
+                <li class="catalog-win-item">
+                  <a class="catalog-win-link" href="catalog.html">Виртуальная реальность</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Моноподы для селфи</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Экшн-камеры</a>
+                </li>
+                <li class="catalog-win-item">
+                  <a class="catalog-win-link" href="catalog.html">Фитнес-браслеты</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Умные часы</a>
+                </li>
+                <li class="catalog-win-item">
+                  <a class="catalog-win-link" href="catalog.html">Квадрокоптеры</a>
+                </li>
+              </ul>
             </li>
-
           </ul>
           <ul class="navigation-warranty-contacts-link">
             <li class="navigation-item">
@@ -69,9 +109,10 @@
           <section class="slider-gallery-products">
             <!--<h2 class="visually-hidden">Товары</h2>-->
             <div class="slider-products">
-              <div class="slider-products-one">
-                <h2 class="visually-hidden slider-products-img"><img src="images/slider-quadrocopter.png" width="560"
-                    height="560" alt="quadrocopter-big"></h2>
+              <div class="slider-products-one win-slider-one">
+                <a href="#"><img class="triangle-slider slider-prev" src="images/previous-product.svg" width="20" height="60" alt="previous"></a>
+                <a href="#"><img class="triangle-slider-next slider-next" src="images/next-product.svg" width="20" height="60" alt="next"></a>
+                <h2 class="slider-products-img"><img src="images/slider-quadrocopter.png" width="560" height="560" alt="quadrocopter-big"></h2>
                 <div class="products-info-list">
                   <ul class="products-list">
                     <li class="products-items">
@@ -99,23 +140,28 @@
                     </li>
                   </ul>
                 </div>
+                <div class="slider-products-button-conteiner">
+                  <img class="slider-products-button" src="images/Ellipse-black-more.svg" width="12" height="12"  alt="черная точка">
+                  <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12"  alt="черный круг">
+                  <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12"  alt="черный круг">
+                </div>
               </div>
-              <!--<div class="slider-products-one">
-                <h2 class="visually-hidden slider-products-img"><img src="images/slider-fitnes-bracelet.png" width="560"
-                    height="560" alt="fitnes bracelet"></h2>
+              <div class="slider-products-one win-slider-two">
+                <h2 class="visually-hidden slider-products-img"><img src="images/slider-fitnes-bracelet.png" width="560" height="560" alt="fitnes bracelet"></h2>
                 <div class="products-info-list">
-
                   <ul class="products-list">
                     <li class="products-items">
                       <h3 class="products-number">02</h3>
                       <div class="products-description-more">
                         <h4 class="products-description-tagline">Худеем <br> правильно!</h4>
-                        <p class="products-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не
-                          пропускать занятия и соблюдать диету.</p>
+                        <p class="products-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать занятия и соблюдать диету.</p>
                       </div>
                     </li>
                   </ul>
-                  <a class="slider-gallery fitnes" href="">Подробнее</a>
+                  <div class="slider-gallery-line-yellow">
+                    <a class="slider-gallery quadrocopter" href="">Подробнее</a>
+                    <div class="inline" tabindex="0"></div>
+                  </div>
                   <ul class="products-more-list">
                     <li class="products-items">
                       <h5 class="products-title">48 часов</h5>
@@ -123,10 +169,16 @@
                     </li>
                   </ul>
                 </div>
+                <img class="triangle-slider slider-prev" src="images/previous-product.svg" width="20" height="60" alt="previous">
+                <img class="triangle-slider-next slider-next" src="images/next-product.svg" width="20" height="60" alt="next">
+                <div class="slider-products-button-conteiner">
+                  <img class="slider-products-button" src="images/Ellipse-black-more.svg" width="12" height="12" alt="черная точка">
+                  <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12" alt="черный круг">
+                  <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12" alt="черный круг">
+                </div>
               </div>
-              <div class="slider-products-one">
-                <h2 class="visually-hidden slider-products-img"><img src="images/slider-monopod.png" width="560"
-                    height="560" alt="monopod">
+              <div class="slider-products-one win-slider-three">
+                <h2 class="visually-hidden slider-products-img"><img src="images/slider-monopod.png" width="560" height="560" alt="monopod">
                 </h2>
                 <div class="products-info-list">
                   <ul class="products-list">
@@ -134,14 +186,15 @@
                       <h3 class="products-number">03</h3>
                       <div class="products-description-more">
                         <h4 class="products-description-tagline">Делай селфи, <br> как Бен Стиллер! </h4>
-                        <p class="products-description">Самая длинная палка для селфи доступна в нашем магазине. <br>
-                          Восемь
-                          (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                        <p class="products-description">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                         </p>
                       </div>
                     </li>
                   </ul>
-                  <a class="slider-gallery monopod" href="">Подробнее</a>
+                  <div class="slider-gallery-line-yellow">
+                    <a class="slider-gallery quadrocopter" href="">Подробнее</a>
+                    <div class="inline" tabindex="0"></div>
+                  </div>
                   <ul class="products-more-list">
                     <li class="products-items">
                       <h5 class="products-title">8,5 м</h5>
@@ -157,20 +210,13 @@
                     </li>
                   </ul>
                 </div>
-              </div>-->
-              <button class="slider-button slider-prev button" type="button">
-                <img class="triangle-slider" src="images/previous-product.svg" width="20" height="60" alt="previous">
-              </button>
-              <button class="slider-button slider-next button" type="button">
-                <img class="triangle-slider-next" src="images/next-product.svg" width="20" height="60" alt="next">
-              </button>
-              <div class="slider-products-button-conteiner">
-                <img class="slider-products-button" src="images/Ellipse-black-more.svg" width="12" height="12"
-                  alt="черная точка">
-                <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12"
-                  alt="черный круг">
-                <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12"
-                  alt="черный круг">
+                <img class="triangle-slider slider-prev" src="images/previous-product.svg" width="20" height="60" alt="previous">
+                <img class="triangle-slider-next slider-next" src="images/next-product.svg" width="20" height="60" alt="next">
+                <div class="slider-products-button-conteiner">
+                  <img class="slider-products-button" src="images/Ellipse-black-more.svg" width="12" height="12" alt="черная точка">
+                  <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12" alt="черный круг">
+                  <img class="slider-products-button" src="images/Ellipse-black.svg" width="12" height="12" alt="черный круг">
+                </div>
               </div>
             </div>
           </section>
@@ -179,48 +225,42 @@
             <ul class="categories-list">
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector.svg" width="97" height="55"
-                      alt="виртуальная реальность">
+                  <div class="back-categories"><img src="images/logo-categories/Vector.svg" width="97" height="55" alt="виртуальная реальность">
                   </div>
                   <p class="categories-description">Виртуальная <br> реальность</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-1.svg" width="86" height="117"
-                      alt="моноподы для селфи">
+                  <div class="back-categories"><img src="images/logo-categories/Vector-1.svg" width="86" height="117" alt="моноподы для селфи">
                   </div>
                   <p class="categories-description">Моноподы <br> для селфи</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-2.svg" width="71" height="87"
-                      alt="экшн-камеры">
+                  <div class="back-categories"><img src="images/logo-categories/Vector-2.svg" width="71" height="87" alt="экшн-камеры">
                   </div>
                   <p class="categories-description">Экшн-камеры</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-3.svg" width="107" height="65"
-                      alt="фитнес-браслеты">
+                  <div class="back-categories"><img src="images/logo-categories/Vector-3.svg" width="107" height="65" alt="фитнес-браслеты">
                   </div>
                   <p class="categories-description">Фитнес-браслеты</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-4.svg" width="56" height="98"
-                      alt="умные часы">
+                  <div class="back-categories"><img src="images/logo-categories/Vector-4.svg" width="56" height="98" alt="умные часы">
                   </div>
                   <p class="categories-description">Умные часы</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-5.svg" width="132" height="69"
-                      alt="квадрокоптеры">
+                  <div class="back-categories"><img src="images/logo-categories/Vector-5.svg" width="132" height="69" alt="квадрокоптеры">
                   </div>
                   <p class="categories-description">Квадрокоптеры</p>
                 </a>
@@ -243,13 +283,11 @@
                 <div class="yellow-linetwo"></div>
                 <div class="yellow-linethree"></div>
               </div>
-              <div class="black-line"></div>
               <ul class="services-slider-list">
                 <li class="services-slider-item-delivery slider-delivery render-slider">
                   <div class="services-delivery">
                     <h3 class="services-title">Доставка</h3>
-                    <p class="services-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду
-                      совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    <p class="services-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
                   </div>
                   <div class="services">
                     <img src="images/services-postman.svg" width="136" height="164" alt="логотип доставщик">
@@ -289,9 +327,9 @@
             </ul>
             <ul class="service-link-more">
               <li class="service-link">
-                <a class="services-order-view" href="delivery.html">
+                <button class="services-order-view" type="menu">
                   <span class="services-order-text">Доставим редкий товар под заказ</span>
-                </a>
+                </button>
               </li>
             </ul>
             <ul class="service-link-sing">
@@ -300,29 +338,64 @@
               </li>
             </ul>
           </div>
+          <ul class="delivery-window">
+            <li class="delivery-window-title">
+              <h2 class="services-order-text-win">Доставка под заказ</h2>
+              <img class="delivery-cross" src="images/delivery-cross.svg" width="26" height="26" alt="cross">
+            </li>
+            <li>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <ul class="delivery-window-ura">
+                  <li class="delivery-window-item">
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Ваше имя:</span></label>
+                      <input class="delivery-window-item-input" type="text" placeholder="Введите имя" name="user name">
+                      <img class="user-icon-delivery-win" src="images/login-enter.svg" width="13" height="12">
+                    </div>
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Ваш e-mail:</span></label>
+                      <input class="delivery-window-item-input" type="email" placeholder="почта" name="subscription-date">
+                      <img class="user-icon-delivery-win-letter" src="images/delivery-letter.svg" width="15" height="12">
+                    </div>
+                  </li>
+                  <li class="delivery-window-item">
+                    <div class="delivery-window-item-link">
+                      <label><span class="text-title-win">Что нужно привезти:</span></label>
+                      <textarea class="delivery-window-item-link-field text-size" name="comment" id="comment-field">В свободной форме</textarea>
+                    </div>
+                    <div class="delivery-window-item-link-end win-delivery-about">
+                      <button class="win-info" type="button"></button>
+                      <div class="win-information">
+                        <img class="win-information-triangle" src="images/triangle-information.svg" width="16" height="4">
+                        <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+                      </div>
+                      <label><span class="text-title-win">Колличество:</span></label>
+                      <br>
+                      <div class="input-win-delivery">
+                        <button class="win-button" type="button"><span class="win-minus"></span></button>
+                        <div class="win-number"><span class="win-number-one">1</span></div>
+                        <button class="win-button-plus" type="button"><span class="win-plus"></span></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="delivery-window-item">
+                    <button class="delivery-window-intake" type="submit">Отправить<span class="yellow-line-win-delivery"></span></button>
+                  </li>
+                </ul>
+              </form>
+            </li>
+          </ul>
         </section>
         <section class="contacts">
           <ul class="contacts-more-list">
             <li class="contacts-item">
-              <div class="black-line-contacts"></div>
               <h2 class="contacts-title">О нас</h2>
-              <p class="contacts-description-text">Огромный выбор гаджетов не оставит равнодушным <br> гика, который
-                есть в каждом из нас.</p>
-              <p class="contacts-description-text">Мы можем доставить ваш товар в самые отдалённые <br> уголки России
-                транспортными компаниями:</p>
+              <p class="contacts-description-text">Огромный выбор гаджетов не оставит равнодушным <br> гика, который есть в каждом из нас.</p>
+              <p class="contacts-description-text">Мы можем доставить ваш товар в самые отдалённые <br> уголки России транспортными компаниями:</p>
               <div class="contacts-tc-item">
-                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
-                    alt="желтая точка">
-                  <span>Меловые линии</span>
-                </p>
-                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
-                    alt="желтая точка">
-                  <span>СДИК</span>
-                </p>
-                <p class="contacts-tc"><img class="ellipse-yellow" src="images/Ellipse-yellow.svg" width="8" height="8"
-                    alt="желтая точка">
-                  <span>ТоксБерри</span>
-                </p>
+                <p class="contacts-tc">Меловые линии</p>
+                <p class="contacts-tc">СДИК</p>
+                <p class="contacts-tc">ТоксБерри</p>
               </div>
               <div class="contacts-more-line">
                 <a class="contacts-more" href="#">Подробнее о нас</a>
@@ -330,13 +403,10 @@
               </div>
             </li>
             <li class="contacts-item">
-              <div class="black-line-contacts"></div>
               <h3 class="contacts-title">Контакты</h3>
-              <p class="contacts-description-text">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете
-                проверить работоспособность покупки. </p>
+              <p class="contacts-description-text">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете проверить работоспособность покупки. </p>
               <h4 class="contacts-name">Интернет-магазин «Девайс»</h4>
-              <p class="contacts-description-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
-                <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              <p class="contacts-description-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </p>
               <h5 class="contacts-name time-work">Время работы</h5>
               <div class="contacts-tc-item">
@@ -355,20 +425,16 @@
             <ul class="subscription-list">
               <li class="subscription-title-more">
                 <h2 class="subscription-title">Подпишитесь <br> на рассылку</h2>
-                <p class="subscription-description-text">Еженедельный дайджест с обзорами новинок, <br>
-                  длительными тест-драйвами, распаковками, а также акции, <br> спецпредложения и вот это вот всё.
-                </p>
+                <p class="subscription-description-text">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, <br> спецпредложения и вот это вот всё.</p>
               </li>
               <li class="subscription-title-more">
                 <div class="subscription-title-more-link">
                   <form action="https://echo.htmlacademy.ru/" method="POST">
-                    <label><input class="enter-mail" type="email" placeholder="Ваш e-mail"
-                        name="subscription-date"></label>
+                    <label><input class="enter-mail" type="email" placeholder="Ваш e-mail" name="subscription-date"></label>
                     <button class="form-email-button button" type="submit">Подписаться</button>
                   </form>
                 </div>
-                <p class="subscription-this"><img class="subscription-icon" src="images/subscription-check-mark.svg"
-                    width="14" height="14" alt="лого галочка">Это бесплатно</p>
+                <p class="subscription-this"><img class="subscription-icon" src="images/subscription-check-mark.svg" width="14" height="14" alt="лого галочка">Это бесплатно</p>
               </li>
             </ul>
           </section>
@@ -380,12 +446,12 @@
         <ul class="page-footer-title">
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">Магазин Девайс</h2>
-            <a><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
+            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
             <div class="yellow-line-footer"></div>
           </li>
         </ul>
-        <ul class="page-footer-title footer-delivery-warranty-contacts-list">
+        <ul class="footer-delivery-warranty-contacts-list">
           <li>
             <h2 class="visually-hidden">доставка гарантия контакты</h2>
           </li>
@@ -409,7 +475,7 @@
             </div>
           </li>
         </ul>
-        <ul class="page-footer-title footer-delivery-warranty-contacts-logo-list">
+        <ul class="footer-delivery-warranty-contacts-logo-list">
           <li class="footer-delivery-warranty-contacts-item">
             <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </li>
