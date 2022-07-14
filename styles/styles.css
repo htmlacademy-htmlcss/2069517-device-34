@@ -334,6 +334,7 @@ html {
 }
 
 .search-conteiner {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
@@ -371,6 +372,8 @@ html {
   position: absolute;
   margin: 0;
   padding: 0;
+  right: 5px;
+  top: 0px;
   width: 158px;
   height: 40px;
   border: 2px solid #000000;
@@ -406,10 +409,14 @@ html {
   outline: 2px solid #AF4FFF;
 }
 
+.cart-amount {
+  position: relative;
+}
+
 .cart-amount-number {
   position: absolute;
-  top: 10px;
-  left: 130px;
+  top: 5px;
+  left: -4px;
   margin: 0 auto;
   padding: 0;
   border: 2px solid #FFFFFF;
@@ -466,7 +473,6 @@ html {
 }
 
 .navigation-cart {
-  position: relative;
   margin: 0;
   padding: 0;
   width: 255px;
@@ -475,6 +481,7 @@ html {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .navigation-list-catalog-container {
@@ -514,6 +521,7 @@ html {
 
 .catalog-win-link {
   text-decoration: none;
+  margin-bottom: 15px;
 }
 
 .catalog-win-link:hover {
@@ -529,7 +537,13 @@ html {
 }
 
 .catalog-win-item {
-  margin-right: 50px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 222px;
+  margin-right: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .navigation-link {
@@ -768,6 +782,23 @@ html {
   margin: 0 auto;
   padding: 0;
   width: 560px;
+  max-height: 560px;
+}
+
+.slider-prev {
+  position: absolute;
+  left: 30px;
+  bottom: 250px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider-next {
+  position: absolute;
+  left: 540px;
+  bottom: 250px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .slider-products-img-control {
@@ -801,22 +832,6 @@ html {
 
 .win-slider-three {
   z-index: -2;
-}
-
-.slider-prev {
-  position: absolute;
-  left: 30px;
-  bottom: 250px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.slider-next {
-  position: absolute;
-  left: 540px;
-  bottom: 250px;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .triangle-slider {
@@ -994,6 +1009,7 @@ html {
   align-items: flex-start;
   list-style-type: none;
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 
 .categories-link {
@@ -1058,7 +1074,7 @@ html {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 78px;
+  padding-top: 103px;
   width: 160px;
   height: 180px;
   display: flex;
@@ -1070,12 +1086,8 @@ html {
 .services-button {
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   z-index: 1;
-}
-
-.black-service-three {
-  margin-bottom: 0;
 }
 
 .black-touch {
@@ -1290,6 +1302,8 @@ html {
 .services-order-view {
   text-decoration: none;
   border: none;
+  background: transparent;
+  padding-bottom: 35px;
 }
 
 .services-order-view:focus {
