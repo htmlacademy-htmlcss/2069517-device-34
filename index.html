@@ -13,7 +13,7 @@
     <header class="page-header">
       <h1 class="visually-hidden">Магазин Девайс</h1>
       <nav class="navigation">
-        <a><img class="logo" src="images/logo-head.svg" width="145" height="36" alt="логотип Девайс"></a>
+        <a class="logo"><img  src="images/logo-head.svg" width="145" height="36" alt="логотип Девайс"></a>
         <div class="navigation-container">
           <ul class="navigation-user">
             <li class="navigation-item search-conteiner">
@@ -111,8 +111,8 @@
               <div class="slider-products-one win-slider-one">
                 <h2 class="slider-products-img">
                   <img class="slider-products-img-control" src="images/slider-quadrocopter.png" width="560" height="560" alt="quadrocopter-big">
-                  <a href="#"><img class="triangle-slider slider-prev" src="images/previous-product.svg" width="20" height="60" alt="previous"></a>
-                  <a href="#"><img class="triangle-slider-next slider-next" src="images/next-product.svg" width="20" height="60" alt="next"></a>
+                  <a class="triangle-slider slider-prev" href="#"><img  src="images/previous-product.svg" width="20" height="60" alt="previous"></a>
+                  <a class="triangle-slider-next slider-next" href="#"><img  src="images/next-product.svg" width="20" height="60" alt="next"></a>
                 </h2>
                 <div class="products-info-list">
                   <ul class="products-list">
@@ -226,44 +226,56 @@
             <ul class="categories-list">
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector.svg" width="97" height="55" alt="виртуальная реальность">
+                  <div class="categories-focus">
+                    <div class="back-categories"><img src="images/logo-categories/Vector.svg" width="97" height="55" alt="виртуальная реальность">
+                    </div>
+                    <p class="categories-description">Виртуальная <br> реальность</p>
                   </div>
-                  <p class="categories-description">Виртуальная <br> реальность</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-1.svg" width="86" height="117" alt="моноподы для селфи">
-                  </div>
-                  <p class="categories-description">Моноподы <br> для селфи</p>
+                  <div class="categories-focus">
+                    <div class="back-categories"><img src="images/logo-categories/Vector-1.svg" width="86" height="117" alt="моноподы для селфи">
+                    </div>
+                    <p class="categories-description">Моноподы <br> для селфи</p>
+                </div>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-2.svg" width="71" height="87" alt="экшн-камеры">
+                  <div class="categories-focus">
+                    <div class="back-categories"><img src="images/logo-categories/Vector-2.svg" width="71" height="87" alt="экшн-камеры">
+                    </div>
+                    <p class="categories-description">Экшн-камеры</p>
                   </div>
-                  <p class="categories-description">Экшн-камеры</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-3.svg" width="107" height="65" alt="фитнес-браслеты">
+                  <div class="categories-focus">
+                    <div class="back-categories"><img src="images/logo-categories/Vector-3.svg" width="107" height="65" alt="фитнес-браслеты">
+                    </div>
+                    <p class="categories-description">Фитнес-браслеты</p>
                   </div>
-                  <p class="categories-description">Фитнес-браслеты</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-4.svg" width="56" height="98" alt="умные часы">
+                  <div class="categories-focus">
+                    <div class="back-categories"><img src="images/logo-categories/Vector-4.svg" width="56" height="98" alt="умные часы">
+                    </div>
+                    <p class="categories-description">Умные часы</p>
                   </div>
-                  <p class="categories-description">Умные часы</p>
                 </a>
               </li>
               <li class="categories-items">
                 <a class="categories-link" href="">
-                  <div class="back-categories"><img src="images/logo-categories/Vector-5.svg" width="132" height="69" alt="квадрокоптеры">
+                  <div class="categories-focus">
+                    <div class="back-categories"><img src="images/logo-categories/Vector-5.svg" width="132" height="69" alt="квадрокоптеры">
+                    </div>
+                    <p class="categories-description">Квадрокоптеры</p>
                   </div>
-                  <p class="categories-description">Квадрокоптеры</p>
                 </a>
               </li>
             </ul>
@@ -321,23 +333,19 @@
         </div>
         <section class="services-order-more">
           <div class="services-order-item-container">
-            <ul class="services-order-item">
-              <li class="services-order-postcar">
-                <img src="images/services-postcar.svg" width="47" height="31" alt="логотип машина доставки">
-              </li>
-            </ul>
-            <ul class="service-link-more">
-              <li class="service-link">
-                <button class="services-order-view" type="menu">
-                  <span class="services-order-text">Доставим редкий товар под заказ</span>
-                </button>
-              </li>
-            </ul>
-            <ul class="service-link-sing">
-              <li class="service-link service-sing">
-                <img src="images/services-i.svg" width="40" height="40" alt="восклицательный знак">
-              </li>
-            </ul>
+            <button class="services-order-view" type="menu">
+              <ul class="services-order-item">
+                <li class="services-order-postcar">
+                  <img src="images/services-postcar.svg" width="47" height="31" alt="логотип машина доставки">
+                </li>
+              </ul>
+              <ul class="service-link-more">
+                <li class="service-link"><span class="services-order-text">Доставим редкий товар под заказ</span></li>
+              </ul>
+              <ul class="service-link-sing">
+                <li class="service-link"><img src="images/services-i.svg" width="40" height="40" alt="восклицательный знак"></li>
+              </ul>
+            </button>
           </div>
           <!--Нужно подключить Javascript<div class="modal-container">-->
           <ul class="delivery-window">
@@ -356,14 +364,15 @@
                     </div>
                     <div class="delivery-window-item-link">
                       <label><span class="text-title-win">Ваш e-mail:</span></label>
-                      <input class="delivery-window-item-input" type="email" placeholder="почта" name="subscription-date">
+                      <input class="delivery-window-item-input win-email-input-border" type="email" placeholder="почта" name="subscription-date">
                       <img class="user-icon-delivery-win-letter" src="images/delivery-letter.svg" width="15" height="12">
+                      <span class="win-email-input-border-error">Забавный у вас адрес.</span>
                     </div>
                   </li>
                   <li class="delivery-window-item">
                     <div class="delivery-window-item-link">
                       <label><span class="text-title-win">Что нужно привезти:</span></label>
-                      <textarea class="delivery-window-item-link-field text-size" name="comment" id="comment-field">В свободной форме</textarea>
+                      <textarea class="delivery-window-item-link-field" name="comment" id="comment-field">В свободной форме</textarea>
                     </div>
                     <div class="delivery-window-item-link-end win-delivery-about">
                       <button class="win-info" type="button"></button>
@@ -446,9 +455,8 @@
         <ul class="page-footer-title">
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">Магазин Девайс</h2>
-            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
+            <a class="logo-footer" href="index.html"><img src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
-            <div class="yellow-line-footer"></div>
           </li>
         </ul>
         <ul class="footer-delivery-warranty-contacts-list">
