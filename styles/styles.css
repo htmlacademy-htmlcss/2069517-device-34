@@ -1310,7 +1310,7 @@ html {
   min-height: 100px;
   margin: 0;
   padding: 0;
-  margin-bottom: 68px;
+  margin-bottom: 70px;
   opacity: 0.7;
   z-index: 1;
 }
@@ -1339,7 +1339,8 @@ html {
   padding: 0;
   width: 900px;
   margin-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  margin-left: 195px;
   list-style-type: none;
 }
 
@@ -1356,7 +1357,6 @@ html {
 .services-order-postcar {
   margin: 0;
   padding: 0;
-  margin-left: -10px;
   width: 125px;
   height: 100px;
   display: flex;
@@ -1379,6 +1379,7 @@ html {
   border: none;
   background: transparent;
   padding-right: 130px;
+  cursor: pointer;
 }
 
 .services-order-view:focus {
@@ -2668,6 +2669,12 @@ filter-line-two {
   background-color: #000000;
   border-radius: 50%;
   content: "";
+}
+
+.filter-fill-bluetooth-radio {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .filter-option {
