@@ -5,53 +5,54 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
 <body>
   <div class="conteiner-body">
     <header class="page-header">
-      <!--  <h1 class="visually-hidden">Магазин Девайс</h1> -->
+      <h1 class="visually-hidden">Магазин Девайс</h1>
       <nav class="navigation navigation-catalog">
-        <a href="index.html"><img class="logo" src="images/logo-head.svg" width="145" height="36" alt="логотип Девайс"></a>
+        <a class="logo" href="index.html"><img  src="images/logo-head.svg" width="145" height="36" alt="логотип Девайс."></a>
         <div class="navigation-container">
           <ul class="navigation-user">
             <li class="navigation-item search-conteiner">
               <form action="https://echo.htmlacademy.ru/" method="POST">
                 <label>
-                  <img class="srch-glass" src="images/srchglass.svg" width="16" height="16" alt="лупа">
+                  <img class="srch-glass" src="images/srchglass.svg" width="16" height="16" alt="лупа.">
                   <input class="button-search-side-checkin" type="search" placeholder="Текст поиска" name="search-date">
                 </label>
                 <button class="navigation-link-head button-search-side" type="submit">Найти</button>
               </form>
             </li>
             <li class="navigation-item">
-              <img class="icon-head" src="images/login-enter-header.svg" width="13" height="12" alt="лого входа">
+              <img class="icon-head" src="images/login-enter-header.svg" width="13" height="12" alt="лого входа.">
               <a class="navigation-link-head" href="#">Коля Петухов</a>
               <a class="navigation-link-head-login" href="#">Выйти</a>
             </li>
           </ul>
           <ul class="navigation-cart">
             <li class="navigation-item">
-              <img class="icon-head" src="images/logo-compare.svg" width="10" height="12" alt="лого сравнить">
+              <img class="icon-head" src="images/logo-compare.svg" width="10" height="12" alt="лого сравнить.">
               <a class="navigation-link-head" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
+            <li class="cart-amount navigation-item">
               <span class="cart-amount-number">2</span>
-              <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина">
-              <a class="navigation-link-head cart-uncover" href="#">Корзина</a>
+              <img class="icon-head" src="images/logo-cart.svg" width="16" height="14" alt="лого корзина.">
+              <button class="navigation-link-head cart-uncover" type="button">Корзина</button>
               <div class="cart-windows">
                 <span class="cart-win-triangle"></span>
                 <ul class="cart-win-list">
                   <li class="cart-win-link">
                     <a class="cart-visual" href="catalog.html">
-                      <img class="cart-win-image" src="images/products/product-1.jpg" width="39" height="43" alt="любительская селфи-палка">
+                      <img class="cart-win-image" src="images/products/product-1.jpg" width="39" height="43" alt="любительская селфи-палка.">
                       <p class="cart-win-text">Любительская селфи-палка</p>
                     </a>
                     <svg class="win-cross" width="10" height="10"></svg>
                   </li>
                   <li class="cart-win-link">
                     <a class="cart-visual" href="catalog.html">
-                      <img class="cart-win-image" src="images/products/product-2.jpg" width="39" height="43" alt="профессиональная селфи-палка">
+                      <img class="cart-win-image" src="images/products/product-2.jpg" width="39" height="43" alt="профессиональная селфи-палка.">
                       <p class="cart-win-text">Профессиональная селфи-палка</p>
                     </a>
                     <svg class="win-cross" width="10" height="10"></svg>
@@ -60,26 +61,28 @@
                     <p class="text-cart">Товаров: 2</p>
                     <p class="text-cart">Сумма: 2000 ₽</p>
                   </li>
+                  <li class="cart-win-button-href">
+                    <a class="cart-win-button" href="#">Открыть корзину</a>
+                  </li>
                 </ul>
-                <button class="cart-win-button" type="submit">Открыть корзину</button>
               </div>
             </li>
           </ul>
         </div>
         <div class="navigation-list-catalog-container">
           <ul class="navigation-list-catalog">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог товаров
+            <li class="navigation-item-catalog">
+              <a class="navigation-link" tabindex="0" href="catalog.html">Каталог товаров
                 <svg class="catalog-plus" width="50" height="50"></svg>
               </a>
               <ul class="catalog-window">
                 <li class="catalog-win-item">
-                  <a class="catalog-win-link" href="catalog.html">Виртуальная реальность</a><br>
-                  <a class="catalog-win-link" href="catalog.html">Моноподы для селфи</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Виртуальная реальность</a>
+                  <a class="catalog-win-link" href="catalog.html">Моноподы для селфи</a>
                   <a class="catalog-win-link" href="catalog.html">Экшн-камеры</a>
                 </li>
                 <li class="catalog-win-item">
-                  <a class="catalog-win-link" href="catalog.html">Фитнес-браслеты</a><br>
+                  <a class="catalog-win-link" href="catalog.html">Фитнес-браслеты</a>
                   <a class="catalog-win-link" href="catalog.html">Умные часы</a>
                 </li>
                 <li class="catalog-win-item">
@@ -89,13 +92,13 @@
             </li>
           </ul>
           <ul class="navigation-warranty-contacts-link">
-            <li class="navigation-item">
+            <li class="navigation-item-catalog">
               <a class="navigation-link" href="delivery.html">Доставка</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-catalog">
               <a class="navigation-link" href="warranty.html">Гарантия</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-catalog">
               <a class="navigation-link" href="contacts.html">Контакты</a>
             </li>
           </ul>
@@ -115,7 +118,7 @@
                 <a class="catalog-monopod-link" href="catalog.html">Каталог товаров</a>
               </li>
               <li>
-                <a class="catalog-monopod-link" tabindex="0">Моноподы для селфи</a>
+                <a class="catalog-monopod-link" tabindex="0" href="#">Моноподы для селфи</a>
               </li>
             </ul>
           </div>
@@ -123,7 +126,7 @@
         <div class="back-catalog">
           <section class="sorting">
             <h2 class="filter-title">фильтр:</h2>
-            <h2 class="filter-title">сортировка:</h2>
+            <h2 class="filter-title-sorting">сортировка:</h2>
             <div class="sorting-choice">
               <select class="sorting-radio-button button" name="sorting-choice">
                 <option class="sorting-choice-radio-label" value="popular">Популярные</option>
@@ -131,8 +134,8 @@
               </select>
             </div>
             <div class="sorting-choice-triangle">
-              <img class="sorting-radio-up" src="images/triangle-sorting-up.svg" width="11" height="10" alt="up">
-              <img class="sorting-radio-down" src="images/triangle-sorting-down.svg" width="11" height="10" alt="down">
+              <div class="sorting-radio-up"></div>
+              <div class="sorting-radio-down"></div>
             </div>
           </section>
           <section>
@@ -145,16 +148,16 @@
                       <legend class="select-cost-title">Стоимость</legend>
                       <div class="slider-select-combo">
                         <div class="slider-select-dotone slider-select-new">
-                          <span class="coma-select"></span>
+                          <button class="coma-select" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
                         </div>
                         <div class="slider-select-lineone">
-                          <img src="images/slider-select/Line-5.svg" alt="line-dark">
+                          <img src="images/slider-select/Line-5.svg" alt="line-dark.">
                         </div>
                         <div class="slider-select-dottwo slider-select-new">
-                          <span class="coma-select"></span>
+                          <button class="coma-select"><span class="visually-hidden">Изменить максимальную цену.</span></button>
                         </div>
                         <div class="slider-select-linetwo">
-                          <img src="images/slider-select/Line-4.svg" alt="line-grey">
+                          <img src="images/slider-select/Line-4.svg" alt="line-grey.">
                         </div>
                       </div>
                       <ul class="slider-select-word">
@@ -226,7 +229,7 @@
                     <ul class="sorting-slider-tile-card">
                       <li class="sorting-slider-tile user">
                         <div class="sorting-slider-tile-first">
-                          <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user">
+                          <img src="images/products/product-1.jpg" width="360" height="380" alt="monopod-user.">
                           <div class="naming-more">
                             <h2 class="sorting-slider-tile-name">Любительская <br> селфи-палка</h2>
                             <p class="sorting-slider-tile-cost">500 ₽</p>
@@ -241,10 +244,10 @@
                       </li>
                       <li class="sorting-slider-tile profi">
                         <div class="sorting-slider-tile-first">
-                          <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi">
+                          <img src="images/products/product-2.jpg" width="360" height="380" alt="monopod-profi.">
                           <div class="naming-more">
                             <h2 class="sorting-slider-tile-name">Профеcсиональная <br> селфи-палка</h2>
-                            <p class="sorting-slider-tile-cost">1500 ₽</p>
+                            <p class="sorting-slider-tile-cost">1 500 ₽</p>
                           </div>
                         </div>
                         <div class="sorting-slider-tile-second">
@@ -256,10 +259,10 @@
                       </li>
                       <li class="sorting-slider-tile water">
                         <div class="sorting-slider-tile-first">
-                          <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water">
+                          <img src="images/products/product-3.jpg" width="360" height="380" alt="monopod-water.">
                           <div class="naming-more">
                             <h2 class="sorting-slider-tile-name">Непотопляемая <br> селфи-палка</h2>
-                            <p class="sorting-slider-tile-cost">2500 ₽</p>
+                            <p class="sorting-slider-tile-cost">2 500 ₽</p>
                           </div>
                         </div>
                         <div class="sorting-slider-tile-second">
@@ -271,10 +274,10 @@
                       </li>
                       <li class="sorting-slider-tile follow">
                         <div class="sorting-slider-tile-first">
-                          <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow">
+                          <img src="images/products/product-4.jpg" width="360" height="380" alt="monopod-follow.">
                           <div class="naming-more">
                             <h2 class="sorting-slider-tile-name">Селфи-палка «Следуй <br> за мной»</h2>
-                            <p class="sorting-slider-tile-cost">1500 ₽</p>
+                            <p class="sorting-slider-tile-cost">1 500 ₽</p>
                           </div>
                         </div>
                         <div class="sorting-slider-tile-second">
@@ -295,7 +298,7 @@
                       <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">1</a></li>
                       <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">2</a></li>
                       <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">3</a></li>
-                      <li class="choice-slider">...</li>
+                      <li class="choice-slider"><span class="sorting-slider-list-elements">...</span></li>
                       <li class="choice-slider"><a class="sorting-slider-list-elements" href="#">15</a></li>
                     </ul>
                     <a class="choice-slider-list-shift" href="#">вперед</a>
@@ -312,7 +315,7 @@
         <ul class="page-footer-title">
           <li class="footer-delivery-warranty-contacts-item">
             <h2 class="visually-hidden">Магазин Девайс</h2>
-            <a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс"></a>
+            <a class="logo-footer" href="index.html"><img src="images/logo-footer.svg" width="150" height="36" alt="логотип Девайс."></a>
             <p class="page-footer-title-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
           </li>
         </ul>
