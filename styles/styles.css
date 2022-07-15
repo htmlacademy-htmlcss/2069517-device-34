@@ -228,7 +228,8 @@ html {
 }
 
 .filter-title,
-.sorting-slider-button {
+.sorting-slider-button,
+.filter-title-sorting {
   font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -330,6 +331,12 @@ html {
 }
 
 .navigation-item {
+  margin: 0;
+  padding: 0;
+  margin-left: 12px;
+}
+
+.navigation-item-catalog {
   margin: 0;
   padding: 0;
 }
@@ -442,14 +449,14 @@ html {
   margin: 0;
   padding: 0;
   margin-top: 8px;
-  margin-right: 12px;
+  margin-right: 8px;
   margin-left: 10px;
 }
 
 .navigation-link-head-login {
   margin: 0;
   padding: 0;
-  margin-left: 10px;
+  margin-left: 22px;
   text-decoration: none;
 }
 
@@ -485,8 +492,8 @@ html {
 .navigation-cart {
   margin: 0;
   padding: 0;
-  width: 255px;
-  margin-top: 40px;
+  width: 280px;
+  margin-top: 43px;
   display: flex;
   margin-left: auto;
   justify-content: space-between;
@@ -584,6 +591,11 @@ html {
   display: flex;
 }
 
+.navigation-link:focus-within+.catalog-window {
+  display: block;
+  display: flex;
+}
+
 .catalog-window:hover {
   display: block;
   display: flex;
@@ -596,6 +608,7 @@ html {
   right: 10px;
   cursor: pointer;
   z-index: 2;
+  content: "";
 }
 
 .catalog-plus:hover {
@@ -629,6 +642,10 @@ html {
   top: 37px;
   right: -75px;
   z-index: 1;
+}
+
+.cart-windows:hover {
+  display: block;
 }
 
 .cart-win-list {
@@ -702,6 +719,13 @@ html {
   padding-bottom: 15px;
 }
 
+.cart-uncover {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
 .cart-uncover:focus-within+.cart-windows {
   display: block;
 }
@@ -732,11 +756,18 @@ html {
   display: block;
 }
 
+.cart-win-button-href {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
 .cart-win-button {
-  margin: 15px;
-  padding: 15px 25px;
+  margin: 17px;
+  padding: 14px 25px;
+  text-align: center;
   background-color: #FFFFFF;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cart-win-button:hover {
@@ -1220,9 +1251,11 @@ html {
 }
 
 .services-delivery {
+  position: relative;
   width: 557px;
   margin: 0 auto;
   padding: 0;
+  margin-right: 200px;
   margin-top: 65px;
   display: flex;
   flex-direction: column;
@@ -1230,6 +1263,15 @@ html {
   text-align: start;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.services {
+  position: absolute;
+  background-image: url(../images/services-postman.svg);
+  width: 136px;
+  height: 164px;
+  right: 0px;
+  background-repeat: no-repeat;
 }
 
 .services-slider-item-delivery {
@@ -1302,11 +1344,13 @@ html {
 }
 
 .service-link-sing {
-  margin: 0;
-  padding: 0;
-  width: 128px;
-  margin-top: 30px;
-  list-style-type: none;
+  position: absolute;
+  background-image: url(../images/services-i.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  right: 45px;
+  top: 30px;
 }
 
 .services-order-postcar {
@@ -1321,11 +1365,20 @@ html {
   background: #FFC700;
 }
 
+.logo-delivery-car {
+  position: absolute;
+  background-image: url(../images/services-postcar.svg);
+  width: 47px;
+  height: 31px;
+  background-repeat: no-repeat;
+}
+
 .services-order-view {
   display: flex;
   text-decoration: none;
   border: none;
   background: transparent;
+  padding-right: 130px;
 }
 
 .services-order-view:focus {
@@ -1941,9 +1994,32 @@ html {
 }
 
 .subscription-this {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-top: 15px;
+}
+
+.subscription-this::before {
+  position: absolute;
+  top: 12px;
+  left: -30px;
+  width: 12px;
+  height: 3px;
+  background-color:#08AF00;
+  content: "";
+  transform: rotate(135deg);
+}
+
+.subscription-this::after {
+  position: absolute;
+  top: 15px;
+  left: -33px;
+  width: 7px;
+  height: 3px;
+  background-color: #08AF00;
+  content: "";
+  transform: rotate(45deg);
 }
 
 .bottom-page {
@@ -2270,11 +2346,13 @@ page-footer-title-address::before {
 
 .sorting-radio-up {
   position: relative;
-  margin: 0;
-  padding: 0;
-  top: 15px;
-  right: 20px;
-  cursor: pointer;
+  width: 0;
+  height: 0;
+  top: 25px;
+  right: 38px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #000000;
   opacity: 0.5;
 }
 
@@ -2288,11 +2366,13 @@ page-footer-title-address::before {
 
 .sorting-radio-down {
   position: relative;
-  margin: 0;
-  padding: 0;
+  width: 0;
+  height: 0;
   top: 15px;
-  right: 5px;
-  cursor: pointer;
+  right: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #000000;
   opacity: 0.5;
 }
 
@@ -2362,7 +2442,7 @@ page-footer-title-address::before {
 
 .coma-select {
   position: absolute;
-  top: 2px;
+  top: 5px;
   left: 0px;
   width: 16px;
   height: 16px;
@@ -2379,6 +2459,10 @@ page-footer-title-address::before {
 .coma-select:active {
   background-color: #000000;
   border: 3px solid #000000;
+}
+
+.coma-select:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .slider-select-word {
@@ -2422,9 +2506,15 @@ page-footer-title-address::before {
   padding: 20px 0;
 }
 
+.filter-title-sorting {
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
 .sorting-choice {
   margin: 0;
   padding: 15px 0;
+  margin-right: 60px;
 }
 
 .sorting-select-catalog {
@@ -2621,6 +2711,10 @@ filter-line-two {
   background: #FFCC33;
 }
 
+.filter-new-vision:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .cotalog-slider-more {
   margin: 0;
   padding: 0;
@@ -2808,7 +2902,7 @@ filter-line-two {
 
 .choice-slider {
   margin: 0;
-  padding: 0 14px;
+  padding: 0 3px;
   margin-top: 20px;
   opacity: 0.5;
 }
@@ -2819,6 +2913,11 @@ filter-line-two {
 
 .choice-slider:active {
   opacity: 0.2;
+}
+
+.sorting-slider-list-elements {
+  padding: 10px 14px 10px  14px;
+
 }
 
 .sorting-slider-list-elements:focus {
