@@ -890,7 +890,7 @@ body {
 }
 
 .triangle-slider:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .triangle-slider-next {
@@ -908,7 +908,7 @@ body {
 }
 
 .triangle-slider-next:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .slider-next:focus-within+.win-slider-one {
