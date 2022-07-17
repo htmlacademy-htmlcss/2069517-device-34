@@ -2525,8 +2525,10 @@ body {
 }
 
 .filter-title-sorting {
-  margin-left: 5px;
+  margin: 0;
+  margin-left: 0px;
   margin-top: 20px;
+  padding: 0;
 }
 
 .sorting-choice {
