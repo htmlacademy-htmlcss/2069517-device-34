@@ -1451,17 +1451,16 @@ body {
   right: -10px;
 }
 
+.delivery-cross:focus {
+  outline:  2px solid #AF4FFF;
+}
+
 .delivery-cross:hover {
   opacity: 0.5;
 }
 
 .delivery-cross:active {
   opacity: 0.2;
-}
-
-.delivery-cross:focus {
-  outline:  2px solid #AF4FFF;
-  outline-width: 5px;
 }
 
 .delivery-window-ura {
@@ -1760,6 +1759,10 @@ body {
   z-index: 1;
 }
 
+.delivery-window-intake:focus {
+  outline:2px solid #AF4FFF;
+}
+
 .delivery-window-intake:hover+.yellow-line-win-delivery {
   height: 40px;
   top: -28px;
@@ -1769,10 +1772,6 @@ body {
 .delivery-window-intake:active+.yellow-line-win-delivery {
   background: #FFCC33;
   transition: 0.5s;
-}
-
-.delivery-window-intake:focus+.yellow-line-win-delivery {
-  outline: 2px solid #AF4FFF;
 }
 
 .contacts {
